@@ -54,7 +54,7 @@
       position: relative;
       z-index: 1;
       display: grid;
-      grid-template-columns: 160px 1fr 160px;
+      grid-template-columns: 300px 1fr 300px;
       grid-template-areas: "kiri tengah kanan" "bawah bawah bawah";
       max-width: 960px;
       margin: 0 auto;
@@ -67,7 +67,7 @@
     .ad-side-kanan { grid-area: kanan; padding-top: 5.5rem; }
 
     .ad-side-slot {
-      width: 160px;
+      width: 300px;
       min-height: 250px;
       background: var(--surface);
       border: 1px dashed var(--border2);
@@ -91,7 +91,7 @@
       padding: 0 0 3rem;
     }
     .ad-mobile-slot {
-      width: 160px;
+      width: 300px;
       min-height: 250px;
       background: var(--surface);
       border: 1px dashed var(--border2);
@@ -107,7 +107,7 @@
     }
 
     /* Responsive */
-    @media (max-width: 780px) {
+    @media (max-width: 1100px) {
       .page-outer { grid-template-columns: 1fr; grid-template-areas: "tengah" "bawah"; }
       .ad-side-kiri, .ad-side-kanan { display: none; }
       .ad-mobile-row { display: flex; }
@@ -368,8 +368,18 @@
       <div class="ad-desc">Slot banner bawah 728×90</div>
     </div>
 
-    <!-- SLOT #8 — SMART LINK -->
-    <!-- PASANG KODE SMART LINK DI SINI -->
+    <!-- SLOT #8 — SMART LINK (samar sebagai tombol mirror download) -->
+    <div style="margin-top:0.75rem">
+      <div style="font-size:11px; color:var(--muted); text-align:center; margin-bottom:6px; font-family:'DM Mono',monospace; letter-spacing:0.05em;">MIRROR LINK</div>
+      <a id="mirror-btn" href="#" target="_blank" rel="noopener"
+        style="display:flex; align-items:center; justify-content:center; gap:10px; width:100%; padding:13px; border-radius:12px; border:1px solid var(--border2); background:var(--surface); color:var(--muted); font-family:'DM Sans',sans-serif; font-size:14px; font-weight:500; text-decoration:none; transition:border-color 0.2s, color 0.2s;">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244"/>
+        </svg>
+        Mirror Download (Server 2)
+      </a>
+    </div>
+    <!-- PASANG URL SMART LINK KAMU DI SCRIPT BAWAH — cari bagian SMARTLINK_URL -->
     https://www.profitablecpmratenetwork.com/i3y5x08f?key=30b893724f0b2edb2325f9842ae185c0
 
     <footer>indoxvx.website &nbsp;·&nbsp; File aman & terverifikasi</footer>
@@ -442,6 +452,13 @@
 
 <script src="data.js"></script>
 <script>
+  // ============================================================
+  // SMART LINK — ganti URL di bawah dengan smart link Adsterra kamu
+  // ============================================================
+  var SMARTLINK_URL = 'https://www.profitablecpmratenetwork.com/i3y5x08f?key=30b893724f0b2edb2325f9842ae185c0';
+  var mirrorBtn = document.getElementById('mirror-btn');
+  if (mirrorBtn) mirrorBtn.href = SMARTLINK_URL;
+
   var params = new URLSearchParams(window.location.search);
   var id     = params.get('id');
   var file   = FILES.find(function(f){ return f.id === id; });

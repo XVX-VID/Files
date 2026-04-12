@@ -2,12 +2,7 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
-  <style>
-    html { overflow-x: hidden; max-width: 100%; }
-    * { max-width: 100%; }
-    img, iframe, video, ins, object, embed { max-width: 100% !important; width: auto !important; }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Download</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,233 +10,208 @@
   <noscript><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"></noscript>
 
   <!-- ============================================================
-    SLOT IKLAN #1 — SOCIAL BAR
-    Tempel kode Social Bar di sini (di dalam <head>).
+    SLOT #1 — SOCIAL BAR
+    Tempel kode Social Bar di sini.
   ============================================================ -->
   <!-- PASANG KODE SOCIAL BAR DI SINI -->
 
   <!-- ============================================================
-    SLOT IKLAN #2 — POPUNDER
-    Tempel kode Popunder di sini (di dalam <head>).
+    SLOT #2 — POPUNDER
+    Tempel kode Popunder di sini.
   ============================================================ -->
   <!-- PASANG KODE POPUNDER DI SINI -->
 
   <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    :root {
-      --bg: #0f0f10;
-      --surface: #181819;
-      --surface2: #1f1f21;
-      --border: rgba(255,255,255,0.08);
-      --border2: rgba(255,255,255,0.14);
-      --text: #f0eff0;
-      --muted: #888789;
-      --accent: #4f8ef7;
-      --green: #3ecf78;
-      --font-main: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-      --font-mono: 'DM Mono', 'SF Mono', 'Fira Code', monospace;
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
-    body {
-      font-family: var(--font-main);
+
+    :root {
+      --bg:      #0f0f10;
+      --surface: #181819;
+      --surface2:#1f1f21;
+      --border:  rgba(255,255,255,0.08);
+      --border2: rgba(255,255,255,0.15);
+      --text:    #f0eff0;
+      --muted:   #888789;
+      --accent:  #4f8ef7;
+      --green:   #3ecf78;
+      --font:    'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      --mono:    'DM Mono', 'SF Mono', monospace;
+    }
+
+    html, body {
+      width: 100%;
+      overflow-x: hidden;
       background: var(--bg);
       color: var(--text);
-      min-height: 100vh;
-      overflow-x: hidden;
-      max-width: 100vw;
+      font-family: var(--font);
+      font-size: 16px;
+      line-height: 1.5;
+      -webkit-text-size-adjust: 100%;
     }
+
     body::before {
       content: '';
       position: fixed;
       inset: 0;
-      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
       pointer-events: none;
       z-index: 0;
     }
 
-    /* Layout 3 kolom desktop */
-    .page-outer {
-      position: relative;
-      z-index: 1;
-      display: grid;
-      grid-template-columns: 300px 1fr 300px;
-      grid-template-areas: "kiri tengah kanan" "bawah bawah bawah";
-      max-width: 960px;
+    /* ── LAYOUT ── */
+    .page { position: relative; z-index: 1; }
+
+    /* Banner atas full width */
+    .top-banner {
       width: 100%;
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 60px;
+      padding: 8px;
+      overflow: hidden;
+    }
+
+    /* Konten utama + sidebar */
+    .layout {
+      display: flex;
+      gap: 20px;
+      max-width: 1100px;
       margin: 0 auto;
-      padding: 0 1rem;
-      gap: 0 1.5rem;
-      align-items: start;
+      padding: 20px 16px 40px;
+      align-items: flex-start;
     }
-    .wrap        { grid-area: tengah; width: 100%; padding: 0 0 4rem; }
-    .ad-side-kiri  { grid-area: kiri;  padding-top: 5.5rem; }
-    .ad-side-kanan { grid-area: kanan; padding-top: 5.5rem; }
 
-    .ad-side-slot {
-      width: 300px;
-      min-height: 250px;
+    .main  { flex: 1; min-width: 0; }
+    .aside { width: 300px; flex-shrink: 0; display: flex; flex-direction: column; gap: 16px; }
+
+    /* ── SLOT IKLAN ── */
+    .ad-box {
       background: var(--surface);
       border: 1px dashed var(--border2);
       border-radius: 10px;
+      overflow: hidden;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      gap: 5px;
-      padding: 10px;
-      text-align: center;
-      overflow: hidden;
+      min-height: 60px;
+      padding: 8px;
+      position: relative;
     }
+    .ad-box.h90  { min-height: 90px; }
+    .ad-box.h250 { min-height: 250px; }
+    .ad-label {
+      font-family: var(--mono);
+      font-size: 9px;
+      color: var(--muted);
+      letter-spacing: 0.1em;
+      position: absolute;
+      top: 5px;
+      right: 8px;
+      opacity: 0.5;
+      pointer-events: none;
+    }
+    /* Semua konten iklan yang diinject tidak boleh melebihi container */
+    .ad-box * { max-width: 100% !important; }
+    .ad-box iframe { max-width: 100% !important; width: 100% !important; height: auto !important; }
 
-    /* Baris mobile — 2 kotak berdampingan di bawah konten */
-    .ad-mobile-row {
-      grid-area: bawah;
-      display: none;
-      justify-content: center;
-      gap: 12px;
-      padding: 0 0 3rem;
-    }
-    .ad-mobile-slot {
-      width: 300px;
-      min-height: 250px;
-      background: var(--surface);
-      border: 1px dashed var(--border2);
-      border-radius: 10px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 5px;
-      padding: 10px;
-      text-align: center;
-      overflow: hidden;
-    }
-
-    /* Responsive */
-    @media (max-width: 1100px) {
-      .page-outer { grid-template-columns: 1fr; grid-template-areas: "tengah" "bawah"; }
-      .ad-side-kiri, .ad-side-kanan { display: none; }
-      .ad-mobile-row { display: flex; }
-      .wrap { max-width: 100%; }
-    }
-
-    .ad-label { font-family: var(--font-mono); font-size: 10px; color: var(--muted); letter-spacing: 0.12em; }
-    .ad-desc  { font-size: 11px; color: var(--muted); line-height: 1.5; }
-
-    /* Wrapper iklan — scale down otomatis kalau lebih lebar dari layar */
-    .ad-wrap {
-      width: 100%;
-      max-width: 100%;
-      overflow: hidden;
-    }
-    .ad-wrap > * {
-      max-width: 100% !important;
-    }
-    /* Khusus banner horizontal 728x90 di HP */
-    @media (max-width: 760px) {
-      .ad-banner-wrap {
-        width: 100%;
-        overflow: hidden;
-        display: flex;
-        justify-content: center;
-      }
-      .ad-banner-wrap > div,
-      .ad-banner-wrap iframe,
-      .ad-banner-wrap ins {
-        transform-origin: top center;
-        transform: scale(0.45);
-        margin-bottom: -50px !important;
-      }
-    }
-
-    .ad-banner {
-      width: 100%;
-      min-height: 90px;
-      background: var(--surface);
-      border: 1px dashed var(--border2);
-      border-radius: 10px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 5px;
-      padding: 10px;
-      text-align: center;
-      overflow-x: auto;
-      overflow-y: hidden;
-      max-width: 100%;
-    }
-    .ad-native {
-      width: 100%;
-      max-width: 100%;
-      background: var(--surface);
-      border: 1px dashed var(--border2);
-      border-radius: 10px;
-      padding: 14px;
-      text-align: center;
-      overflow-x: auto;
-      overflow-y: hidden;
-    }
-
-      padding: 2.5rem 0 2rem;
-      transition: color 0.15s;
-    }
-
-    .hero { margin-bottom: 2rem; }
+    /* ── KONTEN ── */
     .cat-badge {
       display: inline-block;
-      font-family: var(--font-mono);
+      font-family: var(--mono);
       font-size: 11px;
-      padding: 3px 8px;
+      padding: 3px 10px;
       border-radius: 5px;
       background: rgba(79,142,247,0.12);
       color: var(--accent);
       letter-spacing: 0.04em;
-      margin-bottom: 12px;
+      margin-bottom: 10px;
     }
-    .hero h1 { font-size: 26px; font-weight: 600; letter-spacing: -0.02em; margin-bottom: 8px; }
-    .hero p  { font-size: 15px; color: var(--muted); line-height: 1.6; }
 
-    .stats { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 2rem; }
+    h1 {
+      font-size: clamp(20px, 5vw, 28px);
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      margin-bottom: 8px;
+      line-height: 1.2;
+    }
+
+    .desc {
+      font-size: 14px;
+      color: var(--muted);
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-bottom: 16px;
+    }
     .stat {
       background: var(--surface);
       border: 1px solid var(--border);
       border-radius: 10px;
-      padding: 1rem 1.25rem;
+      padding: 14px;
       text-align: center;
     }
-    .stat-val   { font-size: 22px; font-weight: 600; letter-spacing: -0.02em; }
-    .stat-label { font-size: 12px; color: var(--muted); margin-top: 3px; }
+    .stat-val   { font-size: clamp(18px, 4vw, 22px); font-weight: 600; }
+    .stat-label { font-size: 12px; color: var(--muted); margin-top: 2px; }
 
     .file-info {
       background: var(--surface);
       border: 1px solid var(--border);
       border-radius: 10px;
-      padding: 1rem 1.25rem;
+      padding: 14px 16px;
       display: flex;
       align-items: center;
-      gap: 14px;
-      margin-bottom: 1.75rem;
+      gap: 12px;
+      margin-bottom: 16px;
     }
-    .file-info-icon {
-      width: 42px; height: 42px; flex-shrink: 0;
+    .file-icon {
+      width: 40px; height: 40px; flex-shrink: 0;
       background: rgba(79,142,247,0.1);
-      border-radius: 10px;
+      border-radius: 8px;
       display: flex; align-items: center; justify-content: center;
     }
-    .file-info-icon svg { width: 20px; height: 20px; color: var(--accent); }
-    .file-info-name { font-size: 14px; font-weight: 500; margin-bottom: 3px; }
-    .file-info-meta { font-size: 12px; color: var(--muted); display: flex; gap: 10px; }
+    .file-icon svg { width: 18px; height: 18px; color: var(--accent); }
+    .file-name { font-size: 13px; font-weight: 500; margin-bottom: 2px; word-break: break-all; }
+    .file-meta { font-size: 12px; color: var(--muted); display: flex; gap: 8px; flex-wrap: wrap; }
 
-    .countdown-text { text-align: center; font-size: 13px; color: var(--muted); margin-bottom: 10px; }
-    .progress-bar   { height: 3px; background: var(--surface2); border-radius: 4px; overflow: hidden; margin-bottom: 1.25rem; }
-    .progress-fill  { height: 100%; background: var(--accent); border-radius: 4px; transition: width 1s linear; }
+    .cd-text {
+      text-align: center;
+      font-size: 13px;
+      color: var(--muted);
+      margin-bottom: 8px;
+    }
+    .progress-bar {
+      height: 3px;
+      background: var(--surface2);
+      border-radius: 4px;
+      overflow: hidden;
+      margin-bottom: 12px;
+    }
+    .progress-fill {
+      height: 100%;
+      background: var(--accent);
+      border-radius: 4px;
+      transition: width 1s linear;
+    }
 
     .btn-dl {
       width: 100%;
       padding: 15px;
       border-radius: 12px;
       border: none;
-      font-family: var(--font-main);
+      font-family: var(--font);
       font-size: 15px;
       font-weight: 600;
       cursor: pointer;
@@ -250,61 +220,109 @@
       justify-content: center;
       gap: 10px;
       transition: opacity 0.2s, transform 0.15s;
+      margin-bottom: 10px;
     }
-    .btn-dl:disabled { background: var(--surface2); color: var(--muted); cursor: not-allowed; border: 1px solid var(--border); }
-    .btn-dl.ready    { background: var(--accent); color: white; }
+    .btn-dl:disabled {
+      background: var(--surface2);
+      color: var(--muted);
+      cursor: not-allowed;
+      border: 1px solid var(--border);
+    }
+    .btn-dl.ready { background: var(--accent); color: white; }
     .btn-dl.ready:hover { opacity: 0.88; transform: translateY(-1px); }
-    .btn-dl.done     { background: rgba(62,207,120,0.15); color: var(--green); border: 1px solid rgba(62,207,120,0.25); cursor: default; }
+    .btn-dl.done  { background: rgba(62,207,120,0.15); color: var(--green); border: 1px solid rgba(62,207,120,0.25); cursor: default; }
+
+    /* Mirror link */
+    .btn-mirror {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      width: 100%;
+      padding: 12px;
+      border-radius: 12px;
+      border: 1px solid var(--border2);
+      background: var(--surface);
+      color: var(--muted);
+      font-family: var(--font);
+      font-size: 14px;
+      font-weight: 500;
+      text-decoration: none;
+      transition: border-color 0.2s, color 0.2s;
+      margin-bottom: 20px;
+    }
+    .btn-mirror:hover { border-color: var(--accent); color: var(--accent); }
+    .mirror-label {
+      font-family: var(--mono);
+      font-size: 10px;
+      color: var(--muted);
+      text-align: center;
+      letter-spacing: 0.06em;
+      margin-bottom: 5px;
+      opacity: 0.6;
+    }
+
+    /* Divider */
+    .divider {
+      height: 1px;
+      background: var(--border);
+      margin: 20px 0;
+    }
 
     footer {
       text-align: center;
       font-size: 12px;
       color: var(--muted);
-      padding-top: 2rem;
+      padding: 20px 0 10px;
       border-top: 1px solid var(--border);
-      margin-top: 3rem;
-      font-family: var(--font-mono);
+      font-family: var(--mono);
     }
-    .notfound { text-align: center; padding: 5rem 0; }
+
+    /* Not found */
+    .notfound {
+      text-align: center;
+      padding: 80px 20px;
+    }
     .notfound h2 { font-size: 20px; margin-bottom: 8px; }
-    .notfound p  { color: var(--muted); font-size: 14px; }
+    .notfound p  { font-size: 14px; color: var(--muted); }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 800px) {
+      .aside { display: none; }
+      .layout { padding: 16px 12px 30px; }
+    }
+
+    /* Slot mobile — muncul di antara konten di HP */
+    .ad-mobile { display: none; }
+    @media (max-width: 800px) {
+      .ad-mobile { display: block; }
+    }
+
+    /* Banner bawah full width */
+    .bottom-banner {
+      width: 100%;
+      background: var(--surface);
+      border-top: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 60px;
+      padding: 8px;
+      overflow: hidden;
+    }
   </style>
 </head>
 <body>
+<div class="page">
 
-<div class="page-outer">
-
-  <!-- SLOT #3 — 300x250 KIRI (desktop) -->
-  <div class="ad-side-kiri">
-    <div class="ad-side-slot">
-      <div class="ad-label">AD · 300×250</div>
-      <!-- PASANG KODE IKLAN 300x250 KIRI DI SINI -->
+  <!-- ============================================================
+    SLOT #3 — BANNER ATAS (728x90 desktop / otomatis di HP)
+  ============================================================ -->
+  <div class="top-banner">
+    <div class="ad-box h90" style="width:100%; max-width:728px;">
+      <span class="ad-label">AD</span>
+      <!-- PASANG KODE IKLAN BANNER ATAS 728x90 DI SINI -->
       <script>
-  atOptions = {
-    'key' : 'd90d1427d829f9aa92ddf60d63c223bd',
-    'format' : 'iframe',
-    'height' : 250,
-    'width' : 300,
-    'params' : {}
-  };
-</script>
-<script src="https://www.highperformanceformat.com/d90d1427d829f9aa92ddf60d63c223bd/invoke.js"></script>
-
-      <div class="ad-desc">Slot iklan kiri<br>300×250</div>
-    </div>
-  </div>
-
-  <!-- KONTEN UTAMA -->
-  <div class="wrap">
-
-    <div style="height:1rem"></div>
-
-    <!-- SLOT #4 — BANNER ATAS 728x90 -->
-    <div class="ad-banner-wrap">
-      <div class="ad-banner">
-        <div class="ad-label">AD · BANNER 728×90</div>
-        <!-- PASANG KODE IKLAN BANNER ATAS 728x90 DI SINI -->
-        <script>
   atOptions = {
     'key' : '41cd95accb9953b55b31a1e76f9a9c09',
     'format' : 'iframe',
@@ -315,73 +333,105 @@
 </script>
 <script src="https://www.highperformanceformat.com/41cd95accb9953b55b31a1e76f9a9c09/invoke.js"></script>
 
-        <div class="ad-desc">Slot banner atas 728×90</div>
-      </div>
     </div>
+  </div>
 
-    <div style="height:1.5rem"></div>
+  <div class="layout">
 
-    <!-- HERO -->
-    <div class="hero">
-      <span class="cat-badge" id="badge"></span>
-      <h1 id="judul"></h1>
-      <p id="deskripsi"></p>
-    </div>
+    <!-- KONTEN UTAMA -->
+    <div class="main">
 
-    <!-- STATS -->
-    <div class="stats">
-      <div class="stat">
-        <div class="stat-val" id="ukuran"></div>
-        <div class="stat-label">Ukuran file</div>
+      <div style="margin-bottom:20px">
+        <span class="cat-badge" id="badge"></span>
+        <h1 id="judul"></h1>
+        <p class="desc" id="deskripsi"></p>
       </div>
-      <div class="stat">
-        <div class="stat-val" id="total-dl"></div>
-        <div class="stat-label">Total download</div>
-      </div>
-    </div>
 
-    <!-- FILE INFO -->
-    <div class="file-info">
-      <div class="file-info-icon">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"/>
-        </svg>
-      </div>
-      <div>
-        <div class="file-info-name" id="filename"></div>
-        <div class="file-info-meta">
-          <span id="os"></span>
-          <span id="ukuran2"></span>
+      <!-- SLOT #4 — IKLAN MOBILE (muncul hanya di HP, di antara konten) -->
+      <div class="ad-mobile" style="margin-bottom:16px">
+        <div class="ad-box h90">
+          <span class="ad-label">AD</span>
+          <!-- PASANG KODE IKLAN MOBILE DI SINI (300x100 atau apapun) -->
+          <script>
+  atOptions = {
+    'key' : 'd90d1427d829f9aa92ddf60d63c223bd',
+    'format' : 'iframe',
+    'height' : 250,
+    'width' : 300,
+    'params' : {}
+  };
+</script>
+<script src="https://www.highperformanceformat.com/d90d1427d829f9aa92ddf60d63c223bd/invoke.js"></script>
+
         </div>
       </div>
-    </div>
 
-    <!-- COUNTDOWN -->
-    <div class="countdown-text" id="cd-text">Memuat...</div>
-    <div class="progress-bar"><div class="progress-fill" id="prog" style="width:0%"></div></div>
+      <div class="stats">
+        <div class="stat">
+          <div class="stat-val" id="ukuran"></div>
+          <div class="stat-label">Ukuran file</div>
+        </div>
+        <div class="stat">
+          <div class="stat-val" id="total-dl"></div>
+          <div class="stat-label">Total download</div>
+        </div>
+      </div>
 
-    <!-- TOMBOL DOWNLOAD -->
-    <button class="btn-dl" id="dl-btn" disabled>
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"/>
-      </svg>
-      Download Sekarang
-    </button>
+      <div class="file-info">
+        <div class="file-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"/>
+          </svg>
+        </div>
+        <div>
+          <div class="file-name" id="filename"></div>
+          <div class="file-meta">
+            <span id="os"></span>
+            <span id="ukuran2"></span>
+          </div>
+        </div>
+      </div>
 
-    <!-- SLOT #6 — NATIVE BANNER -->
-    <div class="ad-native" style="margin-top:1.75rem">
-      <div class="ad-label">AD · NATIVE BANNER</div>
-      <!-- PASANG KODE NATIVE BANNER DI SINI -->
-      <script async="async" data-cfasync="false" src="https://pl29132458.profitablecpmratenetwork.com/eeb0fba5bb8e81481166df3ba401f0b2/invoke.js"></script>
+      <div class="cd-text" id="cd-text">Memuat...</div>
+      <div class="progress-bar"><div class="progress-fill" id="prog" style="width:0%"></div></div>
+
+      <button class="btn-dl" id="dl-btn" disabled>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"/>
+        </svg>
+        Download Sekarang
+      </button>
+
+      <!-- ============================================================
+        SLOT #5 — SMART LINK (samar sebagai Mirror Download)
+        Ganti SMARTLINK_URL di script bawah
+      ============================================================ -->
+      <p class="mirror-label">MIRROR LINK</p>
+      <a class="btn-mirror" id="mirror-btn" href="#" target="_blank" rel="noopener">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244"/>
+        </svg>
+        Mirror Download (Server 2)
+      </a>
+
+      <div class="divider"></div>
+
+      <!-- ============================================================
+        SLOT #6 — NATIVE BANNER
+      ============================================================ -->
+      <div class="ad-box" style="margin-bottom:16px; min-height:120px;">
+        <span class="ad-label">AD · NATIVE</span>
+        <!-- PASANG KODE NATIVE BANNER DI SINI -->
+        <script async="async" data-cfasync="false" src="https://pl29132458.profitablecpmratenetwork.com/eeb0fba5bb8e81481166df3ba401f0b2/invoke.js"></script>
 <div id="container-eeb0fba5bb8e81481166df3ba401f0b2"></div>
 
-      <div class="ad-desc" style="margin-top:6px">Slot native banner</div>
-    </div>
+      </div>
 
-    <!-- SLOT #7 — BANNER BAWAH 728x90 -->
-    <div class="ad-banner-wrap">
-      <div class="ad-banner" style="margin-top:1rem">
-        <div class="ad-label">AD · BANNER 728×90</div>
+      <!-- ============================================================
+        SLOT #7 — BANNER BAWAH (728x90 desktop / otomatis di HP)
+      ============================================================ -->
+      <div class="ad-box h90" style="margin-bottom:20px;">
+        <span class="ad-label">AD</span>
         <!-- PASANG KODE IKLAN BANNER BAWAH 728x90 DI SINI -->
         <script>
   atOptions = {
@@ -394,33 +444,22 @@
 </script>
 <script src="https://www.highperformanceformat.com/41cd95accb9953b55b31a1e76f9a9c09/invoke.js"></script>
 
-        <div class="ad-desc">Slot banner bawah 728×90</div>
       </div>
-    </div>
 
-    <!-- SLOT #8 — SMART LINK (samar sebagai tombol mirror download) -->
-    <div style="margin-top:0.75rem">
-      <div style="font-size:11px; color:var(--muted); text-align:center; margin-bottom:6px; font-family:var(--font-mono); letter-spacing:0.05em;">MIRROR LINK</div>
-      <a id="mirror-btn" href="#" target="_blank" rel="noopener"
-        style="display:flex; align-items:center; justify-content:center; gap:10px; width:100%; padding:13px; border-radius:12px; border:1px solid var(--border2); background:var(--surface); color:var(--muted); font-family:var(--font-main); font-size:14px; font-weight:500; text-decoration:none; transition:border-color 0.2s, color 0.2s;">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244"/>
-        </svg>
-        Mirror Download (Server 2)
-      </a>
-    </div>
-    <!-- PASANG URL SMART LINK KAMU DI SCRIPT BAWAH — cari bagian SMARTLINK_URL -->
+      <footer>indoxvx.website &nbsp;·&nbsp; File aman & terverifikasi</footer>
 
-    <footer>indoxvx.website &nbsp;·&nbsp; File aman & terverifikasi</footer>
+    </div><!-- /main -->
 
-  </div><!-- /wrap -->
+    <!-- SIDEBAR DESKTOP -->
+    <div class="aside">
 
-  <!-- SLOT #5 — 300x250 KANAN (desktop) -->
-  <div class="ad-side-kanan">
-    <div class="ad-side-slot">
-      <div class="ad-label">AD · 300×250</div>
-      <!-- PASANG KODE IKLAN 300x250 KANAN DI SINI -->
-      <script>
+      <!-- ============================================================
+        SLOT #8 — IKLAN SIDEBAR KANAN 300x250
+      ============================================================ -->
+      <div class="ad-box h250">
+        <span class="ad-label">AD · 300×250</span>
+        <!-- PASANG KODE IKLAN 300x250 SIDEBAR DI SINI -->
+        <script>
   atOptions = {
     'key' : 'd90d1427d829f9aa92ddf60d63c223bd',
     'format' : 'iframe',
@@ -431,109 +470,105 @@
 </script>
 <script src="https://www.highperformanceformat.com/d90d1427d829f9aa92ddf60d63c223bd/invoke.js"></script>
 
-      <div class="ad-desc">Slot iklan kanan<br>300×250</div>
+      </div>
+
+      <!-- ============================================================
+        SLOT #9 — IKLAN SIDEBAR KANAN KEDUA 300x250
+      ============================================================ -->
+      <div class="ad-box h250">
+        <span class="ad-label">AD · 300×250</span>
+        <!-- PASANG KODE IKLAN 300x250 SIDEBAR KEDUA DI SINI -->
+        <script>
+  atOptions = {
+    'key' : 'd90d1427d829f9aa92ddf60d63c223bd',
+    'format' : 'iframe',
+    'height' : 250,
+    'width' : 300,
+    'params' : {}
+  };
+</script>
+<script src="https://www.highperformanceformat.com/d90d1427d829f9aa92ddf60d63c223bd/invoke.js"></script>
+
+      </div>
+
+    </div><!-- /aside -->
+
+  </div><!-- /layout -->
+
+  <!-- ============================================================
+    SLOT #10 — BANNER BAWAH FULL WIDTH
+  ============================================================ -->
+  <div class="bottom-banner">
+    <div class="ad-box h90" style="width:100%; max-width:728px;">
+      <span class="ad-label">AD</span>
+      <!-- PASANG KODE IKLAN BANNER BAWAH FULL WIDTH DI SINI -->
+      <script>
+  atOptions = {
+    'key' : '41cd95accb9953b55b31a1e76f9a9c09',
+    'format' : 'iframe',
+    'height' : 90,
+    'width' : 728,
+    'params' : {}
+  };
+</script>
+<script src="https://www.highperformanceformat.com/41cd95accb9953b55b31a1e76f9a9c09/invoke.js"></script>
+
     </div>
   </div>
 
-  <!-- SLOT MOBILE — 2 kotak 300x250 berdampingan di bawah konten (HP only) -->
-  <div class="ad-mobile-row">
-    <div class="ad-mobile-slot">
-      <div class="ad-label">AD · 300×250</div>
-      <!-- PASANG KODE IKLAN 300x250 KIRI (MOBILE) DI SINI -->
-      <script>
-  atOptions = {
-    'key' : 'd90d1427d829f9aa92ddf60d63c223bd',
-    'format' : 'iframe',
-    'height' : 250,
-    'width' : 300,
-    'params' : {}
-  };
-</script>
-<script src="https://www.highperformanceformat.com/d90d1427d829f9aa92ddf60d63c223bd/invoke.js"></script>
-
-      <script>
-  atOptions = {
-    'key' : 'd90d1427d829f9aa92ddf60d63c223bd',
-    'format' : 'iframe',
-    'height' : 250,
-    'width' : 300,
-    'params' : {}
-  };
-</script>
-<script src="https://www.highperformanceformat.com/d90d1427d829f9aa92ddf60d63c223bd/invoke.js"></script>
-
-      <div class="ad-desc">Slot kiri mobile</div>
-    </div>
-    <div class="ad-mobile-slot">
-      <div class="ad-label">AD · 300×250</div>
-      <!-- PASANG KODE IKLAN 300x250 KANAN (MOBILE) DI SINI -->
-      <script>
-  atOptions = {
-    'key' : 'd90d1427d829f9aa92ddf60d63c223bd',
-    'format' : 'iframe',
-    'height' : 250,
-    'width' : 300,
-    'params' : {}
-  };
-</script>
-<script src="https://www.highperformanceformat.com/d90d1427d829f9aa92ddf60d63c223bd/invoke.js"></script>
-
-      <div class="ad-desc">Slot kanan mobile</div>
+  <!-- NOT FOUND -->
+  <div id="notfound" style="display:none;">
+    <div class="notfound">
+      <h2>File tidak ditemukan</h2>
+      <p>ID file tidak valid.</p>
     </div>
   </div>
 
-</div><!-- /page-outer -->
-
-<!-- NOT FOUND -->
-<div id="notfound" style="display:none; text-align:center; padding:5rem 1rem;">
-  <h2 style="font-size:20px; margin-bottom:8px;">File tidak ditemukan</h2>
-  <p style="color:var(--muted); font-size:14px;">ID file tidak valid.</p>
-</div>
+</div><!-- /page -->
 
 <script src="data.js"></script>
 <script>
   // ============================================================
-  // SMART LINK — ganti URL di bawah dengan smart link Adsterra kamu
+  // SMART LINK — ganti dengan URL smart link kamu
   // ============================================================
   var SMARTLINK_URL = 'https://www.profitablecpmratenetwork.com/i3y5x08f?key=30b893724f0b2edb2325f9842ae185c0';
-  var mirrorBtn = document.getElementById('mirror-btn');
-  if (mirrorBtn) mirrorBtn.href = SMARTLINK_URL;
 
+  // Simpan id ke sessionStorage supaya tidak hilang saat popunder reload
   var params = new URLSearchParams(window.location.search);
-  var id     = params.get('id');
-
-  // Simpan id ke sessionStorage supaya tidak hilang saat halaman reload
+  var id = params.get('id');
   if (id) {
     sessionStorage.setItem('dl_id', id);
   } else {
     id = sessionStorage.getItem('dl_id');
   }
 
-  var file = FILES.find(function(f){ return f.id === id; });
+  var file = FILES.find(function(f) { return f.id === id; });
 
   if (!file) {
-    document.querySelector('.page-outer').style.display = 'none';
+    document.querySelector('.top-banner').style.display = 'none';
+    document.querySelector('.layout').style.display = 'none';
+    document.querySelector('.bottom-banner').style.display = 'none';
     document.getElementById('notfound').style.display = 'block';
   } else {
     document.title = 'Download — ' + file.name;
 
-    document.getElementById('badge').textContent     = file.category;
-    document.getElementById('judul').textContent     = file.name;
+    document.getElementById('badge').textContent    = file.category;
+    document.getElementById('judul').textContent    = file.name;
     document.getElementById('deskripsi').textContent = file.description;
-    document.getElementById('ukuran').textContent    = file.size;
-    document.getElementById('total-dl').textContent  = file.downloads;
-    document.getElementById('filename').textContent  = file.filename;
-    document.getElementById('os').textContent        = file.os;
-    document.getElementById('ukuran2').textContent   = file.size;
+    document.getElementById('ukuran').textContent   = file.size;
+    document.getElementById('total-dl').textContent = file.downloads;
+    document.getElementById('filename').textContent = file.filename;
+    document.getElementById('os').textContent       = file.os;
+    document.getElementById('ukuran2').textContent  = file.size;
+    document.getElementById('mirror-btn').href      = SMARTLINK_URL;
 
     var cdText = document.getElementById('cd-text');
-    var cdMsg  = 'Tombol aktif dalam <strong>' + file.countdown + '</strong> detik...';
-    cdText.innerHTML = cdMsg;
+    var s      = file.countdown;
+    var total  = file.countdown;
+    var btn    = document.getElementById('dl-btn');
+    var prog   = document.getElementById('prog');
 
-    var s     = file.countdown;
-    var total = file.countdown;
-    var btn   = document.getElementById('dl-btn');
-    var prog  = document.getElementById('prog');
+    cdText.innerHTML = 'Tombol aktif dalam <strong>' + s + '</strong> detik...';
 
     var t = setInterval(function() {
       s--;

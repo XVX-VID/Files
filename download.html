@@ -22,7 +22,6 @@
   ============================================================ -->
   <!-- PASANG KODE POPUNDER DI SINI -->
 
-
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
@@ -123,6 +122,32 @@
 
     .ad-label { font-family: var(--font-mono); font-size: 10px; color: var(--muted); letter-spacing: 0.12em; }
     .ad-desc  { font-size: 11px; color: var(--muted); line-height: 1.5; }
+
+    /* Wrapper iklan — scale down otomatis kalau lebih lebar dari layar */
+    .ad-wrap {
+      width: 100%;
+      max-width: 100%;
+      overflow: hidden;
+    }
+    .ad-wrap > * {
+      max-width: 100% !important;
+    }
+    /* Khusus banner horizontal 728x90 di HP */
+    @media (max-width: 760px) {
+      .ad-banner-wrap {
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+      }
+      .ad-banner-wrap > div,
+      .ad-banner-wrap iframe,
+      .ad-banner-wrap ins {
+        transform-origin: top center;
+        transform: scale(0.45);
+        margin-bottom: -50px !important;
+      }
+    }
 
     .ad-banner {
       width: 100%;
@@ -271,10 +296,11 @@
     <div style="height:1rem"></div>
 
     <!-- SLOT #4 — BANNER ATAS 728x90 -->
-    <div class="ad-banner">
-      <div class="ad-label">AD · BANNER 728×90</div>
-      <!-- PASANG KODE IKLAN BANNER ATAS 728x90 DI SINI -->
-      <script>
+    <div class="ad-banner-wrap">
+      <div class="ad-banner">
+        <div class="ad-label">AD · BANNER 728×90</div>
+        <!-- PASANG KODE IKLAN BANNER ATAS 728x90 DI SINI -->
+        <script>
   atOptions = {
     'key' : '41cd95accb9953b55b31a1e76f9a9c09',
     'format' : 'iframe',
@@ -285,7 +311,8 @@
 </script>
 <script src="https://www.highperformanceformat.com/41cd95accb9953b55b31a1e76f9a9c09/invoke.js"></script>
 
-      <div class="ad-desc">Slot banner atas 728×90</div>
+        <div class="ad-desc">Slot banner atas 728×90</div>
+      </div>
     </div>
 
     <div style="height:1.5rem"></div>
@@ -348,10 +375,11 @@
     </div>
 
     <!-- SLOT #7 — BANNER BAWAH 728x90 -->
-    <div class="ad-banner" style="margin-top:1rem">
-      <div class="ad-label">AD · BANNER 728×90</div>
-      <!-- PASANG KODE IKLAN BANNER BAWAH 728x90 DI SINI -->
-      <script>
+    <div class="ad-banner-wrap">
+      <div class="ad-banner" style="margin-top:1rem">
+        <div class="ad-label">AD · BANNER 728×90</div>
+        <!-- PASANG KODE IKLAN BANNER BAWAH 728x90 DI SINI -->
+        <script>
   atOptions = {
     'key' : '41cd95accb9953b55b31a1e76f9a9c09',
     'format' : 'iframe',
@@ -362,7 +390,8 @@
 </script>
 <script src="https://www.highperformanceformat.com/41cd95accb9953b55b31a1e76f9a9c09/invoke.js"></script>
 
-      <div class="ad-desc">Slot banner bawah 728×90</div>
+        <div class="ad-desc">Slot banner bawah 728×90</div>
+      </div>
     </div>
 
     <!-- SLOT #8 — SMART LINK (samar sebagai tombol mirror download) -->
@@ -397,6 +426,7 @@
   };
 </script>
 <script src="https://www.highperformanceformat.com/d90d1427d829f9aa92ddf60d63c223bd/invoke.js"></script>
+
       <div class="ad-desc">Slot iklan kanan<br>300×250</div>
     </div>
   </div>

@@ -9,17 +9,14 @@
 
   <!-- ============================================================
     SLOT IKLAN #1 — SOCIAL BAR
-    Tempel kode Social Bar dari jaringan iklan kamu di sini.
-    Biasanya berupa <script> tag. Letaknya di <head>.
-    Contoh: <script src="//...socialbar..."></script>
+    Tempel kode Social Bar di sini (di dalam <head>).
   ============================================================ -->
   <!-- PASANG KODE SOCIAL BAR DI SINI -->
 <script src="https://pl29132462.profitablecpmratenetwork.com/7b/d5/05/7bd5057308d59d4d8d932e600a6e639d.js"></script>
 
   <!-- ============================================================
     SLOT IKLAN #2 — POPUNDER
-    Tempel kode Popunder di sini (biasanya <script> tag).
-    Popunder aktif saat halaman pertama kali dibuka.
+    Tempel kode Popunder di sini (di dalam <head>).
   ============================================================ -->
   <!-- PASANG KODE POPUNDER DI SINI -->
 <script src="https://pl29132457.profitablecpmratenetwork.com/fa/d3/c5/fad3c5098b5bea3c2c8082f878295489.js"></script>
@@ -52,30 +49,21 @@
       z-index: 0;
     }
 
-    /* Layout utama — 3 kolom saat layar lebar */
+    /* Layout 3 kolom desktop */
     .page-outer {
       position: relative;
       z-index: 1;
       display: grid;
       grid-template-columns: 160px 1fr 160px;
-      grid-template-areas: "kiri tengah kanan" "mobile-kiri mobile-kiri mobile-kiri";
+      grid-template-areas: "kiri tengah kanan" "bawah bawah bawah";
       max-width: 960px;
       margin: 0 auto;
       padding: 0 1rem;
       gap: 0 1.5rem;
       align-items: start;
     }
-
-    /* Kolom tengah */
-    .wrap {
-      grid-area: tengah;
-      max-width: 560px;
-      width: 100%;
-      padding: 0 0 4rem;
-    }
-
-    /* Kolom iklan kiri & kanan — desktop */
-    .ad-side-kiri { grid-area: kiri; padding-top: 5.5rem; }
+    .wrap        { grid-area: tengah; width: 100%; padding: 0 0 4rem; }
+    .ad-side-kiri  { grid-area: kiri;  padding-top: 5.5rem; }
     .ad-side-kanan { grid-area: kanan; padding-top: 5.5rem; }
 
     .ad-side-slot {
@@ -91,15 +79,16 @@
       gap: 5px;
       padding: 10px;
       text-align: center;
+      overflow: hidden;
     }
 
-    /* Slot mobile — 2 kotak berdampingan, muncul di bawah konten di HP */
+    /* Baris mobile — 2 kotak berdampingan di bawah konten */
     .ad-mobile-row {
-      grid-area: mobile-kiri;
+      grid-area: bawah;
       display: none;
-      gap: 12px;
       justify-content: center;
-      padding: 1rem 0 3rem;
+      gap: 12px;
+      padding: 0 0 3rem;
     }
     .ad-mobile-slot {
       width: 160px;
@@ -114,24 +103,20 @@
       gap: 5px;
       padding: 10px;
       text-align: center;
+      overflow: hidden;
     }
 
     /* Responsive */
     @media (max-width: 780px) {
-      .page-outer {
-        grid-template-columns: 1fr;
-        grid-template-areas: "tengah" "mobile-kiri";
-      }
-      .ad-side-kiri { display: none; }
-      .ad-side-kanan { display: none; }
+      .page-outer { grid-template-columns: 1fr; grid-template-areas: "tengah" "bawah"; }
+      .ad-side-kiri, .ad-side-kanan { display: none; }
       .ad-mobile-row { display: flex; }
-      .wrap { grid-area: tengah; max-width: 100%; }
+      .wrap { max-width: 100%; }
     }
 
     .ad-label { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--muted); letter-spacing: 0.12em; }
-    .ad-desc { font-size: 11px; color: var(--muted); line-height: 1.5; }
+    .ad-desc  { font-size: 11px; color: var(--muted); line-height: 1.5; }
 
-    /* Banner horizontal */
     .ad-banner {
       width: 100%;
       min-height: 90px;
@@ -147,8 +132,6 @@
       text-align: center;
       overflow: hidden;
     }
-
-    /* Native banner */
     .ad-native {
       width: 100%;
       background: var(--surface);
@@ -185,7 +168,7 @@
       margin-bottom: 12px;
     }
     .hero h1 { font-size: 26px; font-weight: 600; letter-spacing: -0.02em; margin-bottom: 8px; }
-    .hero p { font-size: 15px; color: var(--muted); line-height: 1.6; }
+    .hero p  { font-size: 15px; color: var(--muted); line-height: 1.6; }
 
     .stats { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 2rem; }
     .stat {
@@ -195,7 +178,7 @@
       padding: 1rem 1.25rem;
       text-align: center;
     }
-    .stat-val { font-size: 22px; font-weight: 600; letter-spacing: -0.02em; }
+    .stat-val   { font-size: 22px; font-weight: 600; letter-spacing: -0.02em; }
     .stat-label { font-size: 12px; color: var(--muted); margin-top: 3px; }
 
     .file-info {
@@ -219,8 +202,8 @@
     .file-info-meta { font-size: 12px; color: var(--muted); display: flex; gap: 10px; }
 
     .countdown-text { text-align: center; font-size: 13px; color: var(--muted); margin-bottom: 10px; }
-    .progress-bar { height: 3px; background: var(--surface2); border-radius: 4px; overflow: hidden; margin-bottom: 1.25rem; }
-    .progress-fill { height: 100%; background: var(--accent); border-radius: 4px; transition: width 1s linear; }
+    .progress-bar   { height: 3px; background: var(--surface2); border-radius: 4px; overflow: hidden; margin-bottom: 1.25rem; }
+    .progress-fill  { height: 100%; background: var(--accent); border-radius: 4px; transition: width 1s linear; }
 
     .btn-dl {
       width: 100%;
@@ -238,9 +221,9 @@
       transition: opacity 0.2s, transform 0.15s;
     }
     .btn-dl:disabled { background: var(--surface2); color: var(--muted); cursor: not-allowed; border: 1px solid var(--border); }
-    .btn-dl.ready { background: var(--accent); color: white; }
+    .btn-dl.ready    { background: var(--accent); color: white; }
     .btn-dl.ready:hover { opacity: 0.88; transform: translateY(-1px); }
-    .btn-dl.done { background: rgba(62,207,120,0.15); color: var(--green); border: 1px solid rgba(62,207,120,0.25); cursor: default; }
+    .btn-dl.done     { background: rgba(62,207,120,0.15); color: var(--green); border: 1px solid rgba(62,207,120,0.25); cursor: default; }
 
     footer {
       text-align: center;
@@ -253,20 +236,16 @@
     }
     .notfound { text-align: center; padding: 5rem 0; }
     .notfound h2 { font-size: 20px; margin-bottom: 8px; }
-    .notfound p { color: var(--muted); font-size: 14px; }
+    .notfound p  { color: var(--muted); font-size: 14px; }
   </style>
 </head>
 <body>
 
 <div class="page-outer">
 
-  <!-- ============================================================
-    SLOT IKLAN #3 — BANNER KIRI 300x250
-    Desktop: muncul di sidebar kiri
-    HP: muncul di bawah konten (lihat .ad-mobile-row)
-  ============================================================ -->
+  <!-- SLOT #3 — 300x250 KIRI (desktop) -->
   <div class="ad-side-kiri">
-    <div class="ad-side-slot" id="slot-kiri">
+    <div class="ad-side-slot">
       <div class="ad-label">AD · 300×250</div>
       <!-- PASANG KODE IKLAN 300x250 KIRI DI SINI -->
       <script>
@@ -280,12 +259,13 @@
 </script>
 <script src="https://www.highperformanceformat.com/d90d1427d829f9aa92ddf60d63c223bd/invoke.js"></script>
 
-      <div class="ad-desc">Slot iklan<br>kiri 300×250</div>
+      <div class="ad-desc">Slot iklan kiri<br>300×250</div>
     </div>
   </div>
 
-  <!-- Konten Utama -->
+  <!-- KONTEN UTAMA -->
   <div class="wrap">
+
     <a class="back" href="index.html">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
         <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"/>
@@ -293,11 +273,8 @@
       Kembali ke daftar
     </a>
 
-    <!-- ============================================================
-      SLOT IKLAN #4 — BANNER ATAS 728x90
-      Tempel kode iklan banner 728x90 di dalam div ini.
-    ============================================================ -->
-    <div class="ad-banner" id="slot-banner-atas">
+    <!-- SLOT #4 — BANNER ATAS 728x90 -->
+    <div class="ad-banner">
       <div class="ad-label">AD · BANNER 728×90</div>
       <!-- PASANG KODE IKLAN BANNER ATAS 728x90 DI SINI -->
       <script>
@@ -314,20 +291,94 @@
       <div class="ad-desc">Slot banner atas 728×90</div>
     </div>
 
-    <div style="height: 1.5rem;"></div>
+    <div style="height:1.5rem"></div>
 
-    <div id="content">
-      <!-- diisi otomatis oleh JS -->
+    <!-- HERO -->
+    <div class="hero">
+      <span class="cat-badge" id="badge"></span>
+      <h1 id="judul"></h1>
+      <p id="deskripsi"></p>
     </div>
-  </div>
 
-  <!-- ============================================================
-    SLOT IKLAN #5 — BANNER KANAN 300x250
-    Desktop: muncul di sidebar kanan
-    HP: muncul di bawah konten (lihat .ad-mobile-row)
-  ============================================================ -->
+    <!-- STATS -->
+    <div class="stats">
+      <div class="stat">
+        <div class="stat-val" id="ukuran"></div>
+        <div class="stat-label">Ukuran file</div>
+      </div>
+      <div class="stat">
+        <div class="stat-val" id="total-dl"></div>
+        <div class="stat-label">Total download</div>
+      </div>
+    </div>
+
+    <!-- FILE INFO -->
+    <div class="file-info">
+      <div class="file-info-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"/>
+        </svg>
+      </div>
+      <div>
+        <div class="file-info-name" id="filename"></div>
+        <div class="file-info-meta">
+          <span id="os"></span>
+          <span id="ukuran2"></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- COUNTDOWN -->
+    <div class="countdown-text" id="cd-text">Memuat...</div>
+    <div class="progress-bar"><div class="progress-fill" id="prog" style="width:0%"></div></div>
+
+    <!-- TOMBOL DOWNLOAD -->
+    <button class="btn-dl" id="dl-btn" disabled>
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"/>
+      </svg>
+      Download Sekarang
+    </button>
+
+    <!-- SLOT #6 — NATIVE BANNER -->
+    <div class="ad-native" style="margin-top:1.75rem">
+      <div class="ad-label">AD · NATIVE BANNER</div>
+      <!-- PASANG KODE NATIVE BANNER DI SINI -->
+      <script async="async" data-cfasync="false" src="https://pl29132458.profitablecpmratenetwork.com/eeb0fba5bb8e81481166df3ba401f0b2/invoke.js"></script>
+<div id="container-eeb0fba5bb8e81481166df3ba401f0b2"></div>
+
+      <div class="ad-desc" style="margin-top:6px">Slot native banner</div>
+    </div>
+
+    <!-- SLOT #7 — BANNER BAWAH 728x90 -->
+    <div class="ad-banner" style="margin-top:1rem">
+      <div class="ad-label">AD · BANNER 728×90</div>
+      <!-- PASANG KODE IKLAN BANNER BAWAH 728x90 DI SINI -->
+      <script>
+  atOptions = {
+    'key' : '41cd95accb9953b55b31a1e76f9a9c09',
+    'format' : 'iframe',
+    'height' : 90,
+    'width' : 728,
+    'params' : {}
+  };
+</script>
+<script src="https://www.highperformanceformat.com/41cd95accb9953b55b31a1e76f9a9c09/invoke.js"></script>
+
+      <div class="ad-desc">Slot banner bawah 728×90</div>
+    </div>
+
+    <!-- SLOT #8 — SMART LINK -->
+    <!-- PASANG KODE SMART LINK DI SINI -->
+    https://www.profitablecpmratenetwork.com/i3y5x08f?key=30b893724f0b2edb2325f9842ae185c0
+
+    <footer>indoxvx.website &nbsp;·&nbsp; File aman & terverifikasi</footer>
+
+  </div><!-- /wrap -->
+
+  <!-- SLOT #5 — 300x250 KANAN (desktop) -->
   <div class="ad-side-kanan">
-    <div class="ad-side-slot" id="slot-kanan">
+    <div class="ad-side-slot">
       <div class="ad-label">AD · 300×250</div>
       <!-- PASANG KODE IKLAN 300x250 KANAN DI SINI -->
       <script>
@@ -341,17 +392,13 @@
 </script>
 <script src="https://www.highperformanceformat.com/d90d1427d829f9aa92ddf60d63c223bd/invoke.js"></script>
 
-      <div class="ad-desc">Slot iklan<br>kanan 300×250</div>
+      <div class="ad-desc">Slot iklan kanan<br>300×250</div>
     </div>
   </div>
 
-  <!-- ============================================================
-    SLOT IKLAN HP — 2 banner 300x250 berdampingan di bawah konten
-    Hanya muncul di layar HP (max-width: 780px).
-    Isi dengan kode iklan yang SAMA dengan slot kiri & kanan di atas.
-  ============================================================ -->
+  <!-- SLOT MOBILE — 2 kotak 300x250 berdampingan di bawah konten (HP only) -->
   <div class="ad-mobile-row">
-    <div class="ad-mobile-slot" id="slot-mobile-kiri">
+    <div class="ad-mobile-slot">
       <div class="ad-label">AD · 300×250</div>
       <!-- PASANG KODE IKLAN 300x250 KIRI (MOBILE) DI SINI -->
       <script>
@@ -365,9 +412,9 @@
 </script>
 <script src="https://www.highperformanceformat.com/d90d1427d829f9aa92ddf60d63c223bd/invoke.js"></script>
 
-      <div class="ad-desc">Slot kiri<br>mobile</div>
+      <div class="ad-desc">Slot kiri mobile</div>
     </div>
-    <div class="ad-mobile-slot" id="slot-mobile-kanan">
+    <div class="ad-mobile-slot">
       <div class="ad-label">AD · 300×250</div>
       <!-- PASANG KODE IKLAN 300x250 KANAN (MOBILE) DI SINI -->
       <script>
@@ -381,126 +428,53 @@
 </script>
 <script src="https://www.highperformanceformat.com/d90d1427d829f9aa92ddf60d63c223bd/invoke.js"></script>
 
-      <div class="ad-desc">Slot kanan<br>mobile</div>
+      <div class="ad-desc">Slot kanan mobile</div>
     </div>
   </div>
 
 </div><!-- /page-outer -->
 
+<!-- NOT FOUND -->
+<div id="notfound" style="display:none; text-align:center; padding:5rem 1rem;">
+  <h2 style="font-size:20px; margin-bottom:8px;">File tidak ditemukan</h2>
+  <p style="color:var(--muted); font-size:14px;">ID tidak valid. Kembali ke <a href="index.html" style="color:var(--accent)">halaman utama</a>.</p>
+</div>
+
 <script src="data.js"></script>
 <script>
-  const params = new URLSearchParams(window.location.search);
-  const id = params.get('id');
-  const file = FILES.find(f => f.id === id);
-  const content = document.getElementById('content');
+  var params = new URLSearchParams(window.location.search);
+  var id     = params.get('id');
+  var file   = FILES.find(function(f){ return f.id === id; });
 
   if (!file) {
-    content.innerHTML = `
-      <div class="notfound">
-        <h2>File tidak ditemukan</h2>
-        <p>ID tidak valid. Kembali ke <a href="index.html" style="color:var(--accent)">halaman utama</a>.</p>
-      </div>`;
+    document.querySelector('.page-outer').style.display = 'none';
+    document.getElementById('notfound').style.display = 'block';
   } else {
     document.title = 'Download — ' + file.name;
 
-    content.innerHTML = `
-      <div class="hero">
-        <span class="cat-badge">${file.category}</span>
-        <h1>${file.name}</h1>
-        <p>${file.description}</p>
-      </div>
+    document.getElementById('badge').textContent     = file.category;
+    document.getElementById('judul').textContent     = file.name;
+    document.getElementById('deskripsi').textContent = file.description;
+    document.getElementById('ukuran').textContent    = file.size;
+    document.getElementById('total-dl').textContent  = file.downloads;
+    document.getElementById('filename').textContent  = file.filename;
+    document.getElementById('os').textContent        = file.os;
+    document.getElementById('ukuran2').textContent   = file.size;
 
-      <div class="stats">
-        <div class="stat">
-          <div class="stat-val">${file.size}</div>
-          <div class="stat-label">Ukuran file</div>
-        </div>
-        <div class="stat">
-          <div class="stat-val">${file.downloads}</div>
-          <div class="stat-label">Total download</div>
-        </div>
-      </div>
+    var cdText = document.getElementById('cd-text');
+    var cdMsg  = 'Tombol aktif dalam <strong>' + file.countdown + '</strong> detik...';
+    cdText.innerHTML = cdMsg;
 
-      <div class="file-info">
-        <div class="file-info-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"/>
-          </svg>
-        </div>
-        <div>
-          <div class="file-info-name">${file.filename}</div>
-          <div class="file-info-meta"><span>${file.os}</span><span>${file.size}</span></div>
-        </div>
-      </div>
+    var s     = file.countdown;
+    var total = file.countdown;
+    var btn   = document.getElementById('dl-btn');
+    var prog  = document.getElementById('prog');
 
-      <div class="countdown-text" id="cd-text">Tombol aktif dalam <strong id="cd-num">${file.countdown}</strong> detik...</div>
-      <div class="progress-bar"><div class="progress-fill" id="prog" style="width:0%"></div></div>
-
-      <button class="btn-dl" id="dl-btn" disabled>
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"/>
-        </svg>
-        Download Sekarang
-      </button>
-
-      <!-- ============================================================
-        SLOT IKLAN #6 — NATIVE BANNER
-        Tempel kode Native Banner/Native Ad di dalam div ini.
-        Native banner biasanya menyerupai konten artikel.
-      ============================================================ -->
-      <div class="ad-native" id="slot-native" style="margin-top: 1.75rem;">
-        <div class="ad-label">AD · NATIVE BANNER</div>
-        <!-- PASANG KODE NATIVE BANNER DI SINI -->
-        <script async="async" data-cfasync="false" src="https://pl29132458.profitablecpmratenetwork.com/eeb0fba5bb8e81481166df3ba401f0b2/invoke.js"></script>
-<div id="container-eeb0fba5bb8e81481166df3ba401f0b2"></div>
-
-        <div class="ad-desc" style="margin-top: 6px;">Slot native banner</div>
-      </div>
-
-      <!-- ============================================================
-        SLOT IKLAN #7 — BANNER BAWAH 728x90
-        Tempel kode iklan banner 728x90 di dalam div ini.
-      ============================================================ -->
-      <div class="ad-banner" id="slot-banner-bawah" style="margin-top: 1rem;">
-        <div class="ad-label">AD · BANNER 728×90</div>
-        <!-- PASANG KODE IKLAN BANNER BAWAH 728x90 DI SINI -->
-        <script>
-  atOptions = {
-    'key' : '41cd95accb9953b55b31a1e76f9a9c09',
-    'format' : 'iframe',
-    'height' : 90,
-    'width' : 728,
-    'params' : {}
-  };
-</script>
-<script src="https://www.highperformanceformat.com/41cd95accb9953b55b31a1e76f9a9c09/invoke.js"></script>
-
-        <div class="ad-desc">Slot banner bawah 728×90</div>
-      </div>
-
-      <!-- ============================================================
-        SLOT IKLAN #8 — SMART LINK
-        Smart link biasanya berupa <script> tag atau 1 baris kode.
-        Tempel di sini — bisa juga dipindah ke bagian <head>.
-      ============================================================ -->
-      <!-- PASANG KODE SMART LINK DI SINI -->
-  https://www.profitablecpmratenetwork.com/i3y5x08f?key=30b893724f0b2edb2325f9842ae185c0
-
-      <footer>indoxvx.website &nbsp;·&nbsp; File aman & terverifikasi</footer>
-    `;
-
-    let s = file.countdown;
-    const total = file.countdown;
-    const btn = document.getElementById('dl-btn');
-    const cdNum = document.getElementById('cd-num');
-    const cdText = document.getElementById('cd-text');
-    const prog = document.getElementById('prog');
-
-    const t = setInterval(() => {
+    var t = setInterval(function() {
       s--;
       prog.style.width = Math.round(((total - s) / total) * 100) + '%';
       if (s > 0) {
-        cdNum.textContent = s;
+        cdText.innerHTML = 'Tombol aktif dalam <strong>' + s + '</strong> detik...';
       } else {
         clearInterval(t);
         cdText.textContent = 'File siap didownload!';
@@ -509,15 +483,11 @@
       }
     }, 1000);
 
-    btn.addEventListener('click', () => {
+    btn.addEventListener('click', function() {
       if (!btn.disabled) {
         window.location.href = file.downloadUrl;
         btn.className = 'btn-dl done';
-        btn.innerHTML = `
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
-          </svg>
-          Download dimulai...`;
+        btn.innerHTML = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg> Download dimulai...';
       }
     });
   }

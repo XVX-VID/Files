@@ -21,7 +21,7 @@
     Tempel kode Popunder di sini (di dalam <head>).
   ============================================================ -->
   <!-- PASANG KODE POPUNDER DI SINI -->
-<script async src="https://pl29132457.profitablecpmratenetwork.com/fa/d3/c5/fad3c5098b5bea3c2c8082f878295489.js"></script>
+
 
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -43,6 +43,8 @@
       background: var(--bg);
       color: var(--text);
       min-height: 100vh;
+      overflow-x: hidden;
+      max-width: 100vw;
     }
     body::before {
       content: '';
@@ -61,6 +63,7 @@
       grid-template-columns: 300px 1fr 300px;
       grid-template-areas: "kiri tengah kanan" "bawah bawah bawah";
       max-width: 960px;
+      width: 100%;
       margin: 0 auto;
       padding: 0 1rem;
       gap: 0 1.5rem;
@@ -134,16 +137,20 @@
       gap: 5px;
       padding: 10px;
       text-align: center;
-      overflow: hidden;
+      overflow-x: auto;
+      overflow-y: hidden;
+      max-width: 100%;
     }
     .ad-native {
       width: 100%;
+      max-width: 100%;
       background: var(--surface);
       border: 1px dashed var(--border2);
       border-radius: 10px;
       padding: 14px;
       text-align: center;
-      overflow: hidden;
+      overflow-x: auto;
+      overflow-y: hidden;
     }
 
       padding: 2.5rem 0 2rem;
@@ -243,6 +250,17 @@
     <div class="ad-side-slot">
       <div class="ad-label">AD · 300×250</div>
       <!-- PASANG KODE IKLAN 300x250 KIRI DI SINI -->
+      <script>
+  atOptions = {
+    'key' : 'd90d1427d829f9aa92ddf60d63c223bd',
+    'format' : 'iframe',
+    'height' : 250,
+    'width' : 300,
+    'params' : {}
+  };
+</script>
+<script src="https://www.highperformanceformat.com/d90d1427d829f9aa92ddf60d63c223bd/invoke.js"></script>
+
       <div class="ad-desc">Slot iklan kiri<br>300×250</div>
     </div>
   </div>
@@ -358,7 +376,8 @@
         Mirror Download (Server 2)
       </a>
     </div>
-    
+    <!-- PASANG URL SMART LINK KAMU DI SCRIPT BAWAH — cari bagian SMARTLINK_URL -->
+
     <footer>indoxvx.website &nbsp;·&nbsp; File aman & terverifikasi</footer>
 
   </div><!-- /wrap -->
@@ -378,7 +397,6 @@
   };
 </script>
 <script src="https://www.highperformanceformat.com/d90d1427d829f9aa92ddf60d63c223bd/invoke.js"></script>
-
       <div class="ad-desc">Slot iklan kanan<br>300×250</div>
     </div>
   </div>
@@ -438,7 +456,15 @@
 
   var params = new URLSearchParams(window.location.search);
   var id     = params.get('id');
-  var file   = FILES.find(function(f){ return f.id === id; });
+
+  // Simpan id ke sessionStorage supaya tidak hilang saat halaman reload
+  if (id) {
+    sessionStorage.setItem('dl_id', id);
+  } else {
+    id = sessionStorage.getItem('dl_id');
+  }
+
+  var file = FILES.find(function(f){ return f.id === id; });
 
   if (!file) {
     document.querySelector('.page-outer').style.display = 'none';

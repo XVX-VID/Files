@@ -14,7 +14,7 @@
     Tempel kode Social Bar di sini.
   ============================================================ -->
   <!-- PASANG KODE SOCIAL BAR DI SINI -->
-<script src="https://pl29132462.profitablecpmratenetwork.com/7b/d5/05/7bd5057308d59d4d8d932e600a6e639d.js"></script>
+<script async src="https://pl29132462.profitablecpmratenetwork.com/7b/d5/05/7bd5057308d59d4d8d932e600a6e639d.js"></script>
 
   <!-- ============================================================
     SLOT #2 — POPUNDER
@@ -90,24 +90,24 @@
     }
 
     .main  { flex: 1; min-width: 0; }
-    .aside { width: 320px; flex-shrink: 0; display: flex; flex-direction: column; gap: 16px; }
+    .aside { width: 300px; flex-shrink: 0; display: flex; flex-direction: column; gap: 16px; align-items: center; }
 
     /* ── SLOT IKLAN ── */
     .ad-box {
       background: var(--surface);
       border: 1px dashed var(--border2);
       border-radius: 10px;
-      overflow: hidden;
+      overflow: visible;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       min-height: 60px;
-      padding: 8px;
+      padding: 0;
       position: relative;
     }
-    .ad-box.h90  { min-height: 90px; }
-    .ad-box.h250 { min-height: 250px; min-width: 300px; }
+    .ad-box.h90  { min-height: 90px; width: 100%; }
+    .ad-box.h250 { min-height: 250px; width: 300px; max-width: 100%; }
     .ad-label {
       font-family: var(--mono);
       font-size: 9px;
@@ -119,9 +119,20 @@
       opacity: 0.5;
       pointer-events: none;
     }
-    /* Semua konten iklan yang diinject tidak boleh melebihi container */
-    .ad-box * { max-width: 100% !important; }
-    .ad-box iframe { max-width: 100% !important; width: 100% !important; height: auto !important; }
+    /* Konten iklan yang diinject */
+    .ad-box iframe,
+    .ad-box ins,
+    .ad-box div,
+    .ad-box img {
+      display: block;
+      margin: 0 auto;
+    }
+    .ad-box.h250 iframe,
+    .ad-box.h250 ins,
+    .ad-box.h250 > div {
+      width: 300px !important;
+      height: 250px !important;
+    }
 
     /* ── KONTEN ── */
     .cat-badge {
@@ -296,7 +307,7 @@
     /* Slot mobile — muncul di antara konten di HP */
     .ad-mobile { display: none; }
     @media (max-width: 800px) {
-      .ad-mobile { display: block; }
+      .ad-mobile { display: flex !important; justify-content: center; width: 100%; }
     }
 
     /* Banner bawah full width */
@@ -349,8 +360,8 @@
       </div>
 
       <!-- SLOT #4 — IKLAN MOBILE (muncul hanya di HP, di antara konten) -->
-      <div class="ad-mobile" style="margin-bottom:16px">
-        <div class="ad-box h250">
+      <div class="ad-mobile" style="margin-bottom:16px; display:none; justify-content:center;">
+        <div class="ad-box h250" style="width:300px;">
           <span class="ad-label">AD</span>
           <!-- PASANG KODE IKLAN MOBILE DI SINI (300x250) -->
           <script>

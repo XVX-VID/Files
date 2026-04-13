@@ -29,7 +29,7 @@ const FILES = [
     countdown: 15
   },
   {
-    id: "hB8kqygn",
+    id: "tes123",
     name: "Bikin Konten Ngentot Bareng Suami Tetangga",
     description: "Download video panas ",
     category: "Video",
@@ -37,7 +37,7 @@ const FILES = [
     downloads: "1.7K",
     os: ".mp4",
     filename: "Bkn Kntn Ngntt Brng Sum Ttngg.mp4",
-    downloadUrl: "https://pixeldrain.com/u/hB8kqygn",  // ganti dengan link asli
+    downloadUrl: "https://github.com/indoxvx-file/cdn/releases/download/v2026/Bkn.Kntn.Ngntt.Brng.Sm.Ttngg.mp4",  // ganti dengan link asli
     countdown: 15
   },
 ];

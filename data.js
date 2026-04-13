@@ -29,15 +29,15 @@ const FILES = [
     countdown: 15
   },
   {
-    id: "dokumen-c",
-    name: "Nama Dokumen C",
-    description: "Deskripsi dokumen ini. Misalnya ebook, template, atau file PDF panduan.",
-    category: "Dokumen",
-    size: "3.2 MB",
-    downloads: "5.7K",
-    os: "Semua platform",
-    filename: "NamaDokumenC.pdf",
-    downloadUrl: "https://link-download-kamu.com/dokumen-c.pdf",  // ganti dengan link asli
-    countdown: 10
-  }
+    id: "hB8kqygn",
+    name: "Bikin Konten Ngentot Bareng Suami Tetangga",
+    description: "Download video panas ",
+    category: "Video",
+    size: "36.2 MB",
+    downloads: "1.7K",
+    os: ".mp4",
+    filename: "Bkn Kntn Ngntt Brng Sum Ttngg.mp4",
+    downloadUrl: "https://pixeldrain.com/api/file/hB8kqygn?download",  // ganti dengan link asli
+    countdown: 15
+  },
 ];

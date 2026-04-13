@@ -5,10 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="robots" content="noindex, nofollow" />
   <meta name="googlebot" content="noindex, nofollow" />
-  <meta name="bingbot" content="noindex, nofollow" />
-  <meta name="Yandex Bot" content="noindex, nofollow" />
-  <meta name="DuckDuckBot" content="noindex, nofollow" />
-  <meta name="Slurp Bot" content="noindex, nofollow" />
   <title>Download</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,7 +16,7 @@
     Tempel kode Social Bar di sini.
   ============================================================ -->
   <!-- PASANG KODE SOCIAL BAR DI SINI -->
-<script src="https://pl29132462.profitablecpmratenetwork.com/7b/d5/05/7bd5057308d59d4d8d932e600a6e639d.js"></script>
+<script async src="https://pl29132462.profitablecpmratenetwork.com/7b/d5/05/7bd5057308d59d4d8d932e600a6e639d.js"></script>
 
   <!-- ============================================================
     SLOT #2 — POPUNDER
@@ -709,7 +705,15 @@
 
     btn.addEventListener('click', function() {
       if (!btn.disabled) {
-        window.location.href = file.downloadUrl;
+        // Buat link download sementara — file didownload di background
+        var a = document.createElement('a');
+        a.href = file.downloadUrl;
+        a.download = file.filename;
+        a.target = '_blank';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+
         btn.className = 'btn-dl done';
         btn.innerHTML = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg> Download dimulai...';
       }

@@ -16,12 +16,14 @@
     Tempel kode Social Bar di sini.
   ============================================================ -->
   <!-- PASANG KODE SOCIAL BAR DI SINI -->
+<script async src="https://pl29132462.profitablecpmratenetwork.com/7b/d5/05/7bd5057308d59d4d8d932e600a6e639d.js"></script>
 
   <!-- ============================================================
     SLOT #2 — POPUNDER
     Tempel kode Popunder di sini.
   ============================================================ -->
   <!-- PASANG KODE POPUNDER DI SINI -->
+<script async src="https://pl29132462.profitablecpmratenetwork.com/7b/d5/05/7bd5057308d59d4d8d932e600a6e639d.js"></script>
 
   <style>
     *, *::before, *::after {
@@ -650,7 +652,7 @@
   // ============================================================
   // SMART LINK — ganti dengan URL smart link kamu
   // ============================================================
-  var SMARTLINK_URL = 'GANTI_DENGAN_URL_SMARTLINK_KAMU';
+  var SMARTLINK_URL = 'https://www.profitablecpmratenetwork.com/i3y5x08f?key=30b893724f0b2edb2325f9842ae185c0';
 
   // Simpan id ke sessionStorage supaya tidak hilang saat popunder reload
   var params = new URLSearchParams(window.location.search);
@@ -704,17 +706,15 @@
 
     btn.addEventListener('click', function() {
       if (!btn.disabled) {
-        // Buat link download sementara — file didownload di background
-        var a = document.createElement('a');
-        a.href = file.downloadUrl;
-        a.download = file.filename;
-        a.target = '_blank';
-        document.body.appendChild(a);
-        a.click();
-        document.body.removeChild(a);
-
         btn.className = 'btn-dl done';
         btn.innerHTML = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg> Download dimulai...';
+
+        // Pakai window.open dengan _blank agar tidak trigger iklan
+        var win = window.open(file.downloadUrl, '_blank');
+        if (!win) {
+          // Fallback jika popup diblokir browser
+          window.location.href = file.downloadUrl;
+        }
       }
     });
   }

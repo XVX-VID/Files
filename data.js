@@ -37,7 +37,7 @@ const FILES = [
     downloads: "1.7K",
     os: ".mp4",
     filename: "Bkn Kntn Ngntt Brng Sum Ttngg.mp4",
-    downloadUrl: "https://pixeldrain.com/api/file/hB8kqygn?download",  // ganti dengan link asli
+    downloadUrl: "https://pixeldrain.com/u/hB8kqygn",  // ganti dengan link asli
     countdown: 15
   },
 ];

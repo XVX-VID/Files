@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="googlebot" content="noindex, nofollow" />
+  <title>Hash ID Generator</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg:      #0f0f10;
+      --surface: #181819;
+      --surface2:#1f1f21;
+      --border:  rgba(255,255,255,0.08);
+      --border2: rgba(255,255,255,0.15);
+      --text:    #f0eff0;
+      --muted:   #888789;
+      --accent:  #4f8ef7;
+      --green:   #3ecf78;
+      --font:    'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      --mono:    'DM Mono', 'SF Mono', monospace;
+    }
+    html, body {
+      min-height: 100vh;
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font);
+      font-size: 16px;
+      line-height: 1.5;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 0;
+    }
+    .page {
+      position: relative;
+      z-index: 1;
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 3rem 1.25rem 4rem;
+    }
+    .logo {
+      font-family: var(--mono);
+      font-size: 12px;
+      color: var(--accent);
+      letter-spacing: 0.1em;
+      margin-bottom: 1.25rem;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .logo::before {
+      content: '';
+      display: inline-block;
+      width: 7px; height: 7px;
+      background: var(--accent);
+      border-radius: 50%;
+    }
+    h1 {
+      font-size: 28px;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      margin-bottom: 6px;
+    }
+    .subtitle {
+      font-size: 14px;
+      color: var(--muted);
+      margin-bottom: 2.5rem;
+    }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1.5rem;
+      margin-bottom: 16px;
+    }
+    .card-title {
+      font-family: var(--mono);
+      font-size: 11px;
+      color: var(--muted);
+      letter-spacing: 0.1em;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .card-title span {
+      background: rgba(79,142,247,0.12);
+      color: var(--accent);
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 10px;
+    }
+    label {
+      font-size: 13px;
+      color: var(--muted);
+      display: block;
+      margin-bottom: 6px;
+    }
+    input[type="text"],
+    input[type="number"] {
+      background: var(--surface2);
+      border: 1px solid var(--border2);
+      border-radius: 8px;
+      color: var(--text);
+      font-family: var(--font);
+      font-size: 14px;
+      padding: 10px 14px;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+    input[type="text"] { width: 100%; }
+    input[type="text"]:focus,
+    input[type="number"]:focus { border-color: var(--accent); }
+    input[type="number"] { width: 80px; }
+    .input-row { display: flex; gap: 8px; margin-bottom: 16px; }
+    .input-row input[type="text"] { flex: 1; }
+    button {
+      background: var(--accent);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-family: var(--font);
+      font-size: 14px;
+      font-weight: 500;
+      padding: 10px 18px;
+      cursor: pointer;
+      transition: opacity 0.2s;
+      white-space: nowrap;
+    }
+    button:hover { opacity: 0.88; }
+    button.secondary {
+      background: var(--surface2);
+      color: var(--text);
+      border: 1px solid var(--border2);
+    }
+    button.secondary:hover { border-color: var(--accent); color: var(--accent); }
+    .result-box {
+      background: var(--surface2);
+      border: 1px solid var(--border2);
+      border-radius: 10px;
+      padding: 14px 16px;
+      margin-bottom: 12px;
+      display: none;
+    }
+    .result-box.show { display: block; }
+    .result-label {
+      font-family: var(--mono);
+      font-size: 10px;
+      color: var(--muted);
+      letter-spacing: 0.08em;
+      margin-bottom: 6px;
+    }
+    .hash-val {
+      font-family: var(--mono);
+      font-size: 18px;
+      font-weight: 500;
+      color: var(--accent);
+      letter-spacing: 0.06em;
+      margin-bottom: 4px;
+    }
+    .url-val {
+      font-family: var(--mono);
+      font-size: 12px;
+      color: var(--muted);
+      word-break: break-all;
+    }
+    .btn-row { display: flex; gap: 8px; margin-top: 10px; flex-wrap: wrap; }
+    .btn-sm {
+      font-size: 12px;
+      padding: 6px 12px;
+      border-radius: 6px;
+    }
+    .copy-msg {
+      font-size: 12px;
+      color: var(--green);
+      margin-top: 6px;
+      min-height: 16px;
+      font-family: var(--mono);
+    }
+    .divider { height: 1px; background: var(--border); margin: 1.5rem 0; }
+    textarea {
+      font-family: var(--mono);
+      font-size: 12px;
+      background: var(--surface2);
+      border: 1px solid var(--border2);
+      border-radius: 8px;
+      color: var(--text);
+      padding: 12px;
+      width: 100%;
+      min-height: 160px;
+      resize: vertical;
+      line-height: 1.7;
+      outline: none;
+    }
+    textarea:focus { border-color: var(--accent); }
+    .row { display: flex; gap: 8px; align-items: center; margin-bottom: 12px; flex-wrap: wrap; }
+    .example-box {
+      background: var(--surface2);
+      border: 1px solid var(--border2);
+      border-radius: 10px;
+      padding: 14px 16px;
+    }
+    .example-label {
+      font-family: var(--mono);
+      font-size: 10px;
+      color: var(--muted);
+      letter-spacing: 0.08em;
+      margin-bottom: 8px;
+    }
+    footer {
+      text-align: center;
+      font-size: 12px;
+      color: var(--muted);
+      font-family: var(--mono);
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <div class="logo">HASH ID GENERATOR</div>
+  <h1>Generate Hash ID</h1>
+  <p class="subtitle">Buat ID acak untuk file download di data.js</p>
+
+  <!-- SINGLE GENERATOR -->
+  <div class="card">
+    <div class="card-title">SINGLE <span>1 hash</span></div>
+
+    <label>Nama file (opsional — untuk referensi)</label>
+    <div class="input-row">
+      <input type="text" id="nama-input" placeholder="contoh: Nama Aplikasi A" />
+      <button onclick="generate()">Generate</button>
+    </div>
+
+    <div class="result-box" id="result-box">
+      <div class="result-label">HASH ID</div>
+      <div class="hash-val" id="hash-out"></div>
+      <div class="url-val" id="url-out"></div>
+      <div class="btn-row">
+        <button class="secondary btn-sm" onclick="copyHash()">Copy ID</button>
+        <button class="secondary btn-sm" onclick="copyUrl()">Copy URL</button>
+        <button class="secondary btn-sm" onclick="generate()">Regenerate</button>
+      </div>
+      <div class="copy-msg" id="copy-msg"></div>
+    </div>
+  </div>
+
+  <!-- CONTOH DATA.JS -->
+  <div class="card">
+    <div class="card-title">CONTOH DATA.JS</div>
+    <div class="example-box">
+      <div class="example-label">SIAP COPY-PASTE KE data.js</div>
+      <textarea id="example-out" readonly></textarea>
+    </div>
+    <div style="margin-top:10px">
+      <button class="secondary btn-sm" onclick="copyExample()">Copy Kode</button>
+      <span class="copy-msg" id="copy-example-msg" style="display:inline-block; margin-left:8px;"></span>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- BULK GENERATOR -->
+  <div class="card">
+    <div class="card-title">BULK <span>banyak sekaligus</span></div>
+    <div class="row">
+      <label style="margin:0">Jumlah hash:</label>
+      <input type="number" id="bulk-count" value="5" min="1" max="50" />
+      <button onclick="generateBulk()">Generate</button>
+      <button class="secondary" onclick="copyBulk()">Copy Semua</button>
+    </div>
+    <textarea id="bulk-out" readonly placeholder="Hash akan muncul di sini..."></textarea>
+    <span class="copy-msg" id="copy-bulk-msg"></span>
+  </div>
+
+  <footer>Hash Generator &nbsp;·&nbsp; Dibuat untuk indoxvx.website</footer>
+
+</div>
+
+<script>
+  function randomHash(len) {
+    len = len || 10;
+    var chars = 'abcdefghijklmnopqrstuvwxyz0123456789';
+    var result = '';
+    var arr = new Uint8Array(len);
+    crypto.getRandomValues(arr);
+    for (var i = 0; i < len; i++) {
+      result += chars[arr[i] % chars.length];
+    }
+    return result;
+  }
+
+  var lastHash = '';
+
+  function generate() {
+    var nama = document.getElementById('nama-input').value || 'Nama File';
+    lastHash = randomHash(10);
+
+    document.getElementById('hash-out').textContent = lastHash;
+    document.getElementById('url-out').textContent  = 'download.html?id=' + lastHash;
+    document.getElementById('result-box').classList.add('show');
+
+    document.getElementById('example-out').value =
+      '{\n' +
+      '  id: "' + lastHash + '",\n' +
+      '  name: "' + nama + '",\n' +
+      '  description: "Deskripsi singkat tentang file ini.",\n' +
+      '  category: "Software",\n' +
+      '  size: "0 MB",\n' +
+      '  downloads: "0",\n' +
+      '  os: "Windows 10/11",\n' +
+      '  filename: "namafile.exe",\n' +
+      '  downloadUrl: "https://link-download-kamu.com/file.exe",\n' +
+      '  countdown: 10\n' +
+      '}';
+  }
+
+  function copyHash() {
+    navigator.clipboard.writeText(lastHash);
+    showMsg('copy-msg', 'ID disalin!');
+  }
+
+  function copyUrl() {
+    navigator.clipboard.writeText('download.html?id=' + lastHash);
+    showMsg('copy-msg', 'URL disalin!');
+  }
+
+  function copyExample() {
+    var val = document.getElementById('example-out').value;
+    if (!val) return;
+    navigator.clipboard.writeText(val);
+    showMsg('copy-example-msg', 'Kode disalin!');
+  }
+
+  function generateBulk() {
+    var n = Math.min(parseInt(document.getElementById('bulk-count').value) || 5, 50);
+    var lines = [];
+    for (var i = 0; i < n; i++) {
+      var h = randomHash(10);
+      lines.push(h + '   ->   download.html?id=' + h);
+    }
+    document.getElementById('bulk-out').value = lines.join('\n');
+  }
+
+  function copyBulk() {
+    var val = document.getElementById('bulk-out').value;
+    if (!val) return;
+    navigator.clipboard.writeText(val);
+    showMsg('copy-bulk-msg', 'Semua hash disalin!');
+  }
+
+  function showMsg(id, msg) {
+    var el = document.getElementById(id);
+    el.textContent = msg;
+    setTimeout(function() { el.textContent = ''; }, 2000);
+  }
+
+  // Auto generate saat halaman load
+  generate();
+</script>
+</body>
+</html>

@@ -34,22 +34,22 @@ const FILES = [
     description: "Download video panas",
     category: "Video",
     size: "36.2 MB",
-    downloads: "1.7K",
+    downloads: "1.2K",
     os: ".mp4",
     filename: "Bkn Kntn Ngntt Brng Sum Ttngg.mp4",
     downloadUrl: "https://github.com/indoxvx-file/cdn/releases/download/v2026/Bkn.Kntn.Ngntt.Brng.Sm.Ttngg.mp4",  // ganti dengan link asli
     countdown: 20
   },
   {
-    id: "id file",
-    name: "Judul video",
-    description: "Download video mantap",
+    id: "z9h5xzpzjr",
+    name: "Pasangan Remaja Kepergok Mesum Didalam Rental PS",
+    description: "Download video mesum",
     category: "Video",
-    size: "ukuran file",
-    downloads: "1.7K",
+    size: "18.7 MB",
+    downloads: "1.4K",
     os: ".mp4",
-    filename: "judul video.mp4",
-    downloadUrl: "link direct download",  // ganti dengan link asli
+    filename: "Psngn Rmj Kprgk Msm Ddlm Rntl PS.mp4",
+    downloadUrl: "https://github.com/indoxvx-file/cdn/releases/download/v2026/Psngn.Rmj.Kprgk.Msm.Ddlm.Rntl.PS.mp4",  // ganti dengan link asli
     countdown: 20
   },
 ];

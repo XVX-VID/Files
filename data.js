@@ -34,7 +34,7 @@ const FILES = [
     description: "Jika file tidak bisa terdownload, Silahkan hapus cache browser anda terlebih dahulu dan klik kembali tombol downloadnya!",
     category: "Indo XvX Video",
     size: "36.2 MB",
-    downloads: "1.2K",
+    downloads: "09:28",
     os: ".mp4",
     filename: "Bkn Kntn Ngntt Brng Sum Ttngg.mp4",
     downloadUrl: "https://github.com/indoxvx-file/cdn/releases/download/v2026/Bkn.Kntn.Ngntt.Brng.Sm.Ttngg.mp4",  // ganti dengan link asli
@@ -46,7 +46,7 @@ const FILES = [
     description: "Jika file tidak bisa terdownload, Silahkan hapus cache browser anda terlebih dahulu dan klik kembali tombol downloadnya!",
     category: "Indo XvX Video",
     size: "18.7 MB",
-    downloads: "1.4K",
+    downloads: "02:05",
     os: ".mp4",
     filename: "Psngn Rmj Kprgk Msm Ddlm Rntl PS.mp4",
     downloadUrl: "https://github.com/indoxvx-file/cdn/releases/download/v2026/Psngn.Rmj.Kprgk.Msm.Ddlm.Rntl.PS.mp4",  // ganti dengan link asli
@@ -58,7 +58,7 @@ const FILES = [
     description: "Jika file tidak bisa terdownload, Silahkan hapus cache browser anda terlebih dahulu dan klik kembali tombol downloadnya!",
     category: "xJilbab Video",
     size: "25.9 MB",
-    downloads: "1.1K",
+    downloads: "04:17",
     os: ".mp4",
     filename: "Jlbbs.Mns.Ssny.Gd.Mnggd.mp4",
     downloadUrl: "https://github.com/xjilbab-file/cdn/releases/download/v2026/Jlbbs.Mns.Ssny.Gd.Mnggd.mp4",  // ganti dengan link asli

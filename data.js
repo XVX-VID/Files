@@ -31,7 +31,7 @@ const FILES = [
   {
     id: "nov4oy8e8c",
     name: "Bikin Konten Ngentot Bareng Suami Tetangga",
-    description: "Jika file tidak bisa terdownload,Silahkan hapus cache browser anda terlebih dahulu dan klik kembali tombol downloadnya!",
+    description: "Jika file tidak bisa terdownload, Silahkan hapus cache browser anda terlebih dahulu dan klik kembali tombol downloadnya!",
     category: "Video",
     size: "36.2 MB",
     downloads: "1.2K",
@@ -43,7 +43,7 @@ const FILES = [
   {
     id: "z9h5xzpzjr",
     name: "Pasangan Remaja Kepergok Mesum Didalam Rental PS",
-    description: "Jika file tidak bisa terdownload,Silahkan hapus cache browser anda terlebih dahulu dan klik kembali tombol downloadnya!",
+    description: "Jika file tidak bisa terdownload, Silahkan hapus cache browser anda terlebih dahulu dan klik kembali tombol downloadnya!",
     category: "Video",
     size: "18.7 MB",
     downloads: "1.4K",

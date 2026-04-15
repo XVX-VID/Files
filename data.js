@@ -64,4 +64,16 @@ const FILES = [
     downloadUrl: "https://github.com/xjilbab-file/cdn/releases/download/v2026/Jlbbs.Mns.Ssny.Gd.Mnggd.mp4",  // ganti dengan link asli
     countdown: 20
   },
+  {
+    id: "g6h471vkia",
+    name: "Fantasi Liar Hijaber Semok Tobrut Omek Hot",
+    description: "Jika file tidak bisa terdownload, Silahkan hapus cache browser anda terlebih dahulu dan klik kembali tombol downloadnya!",
+    category: "xJilbab Video",
+    size: "12.7 MB",
+    downloads: "01:57",
+    os: ".mp4",
+    filename: "Fnts.Lr.Hjbr.Smk.Tbrt.Omk.Ht.mp4",
+    downloadUrl: "https://github.com/xjilbab-file/cdn/releases/download/v2026/Fnts.Lr.Hjbr.Smk.Tbrt.Omk.Ht.mp4",  // ganti dengan link asli
+    countdown: 20
+  },
 ];

@@ -88,4 +88,16 @@ const FILES = [
     downloadUrl: "https://github.com/xjilbab-file/cdn/releases/download/v2026/Aks.Pns.Hjbr.Kby.Htm.mp4",  // ganti dengan link asli
     countdown: 20
   },
+  {
+    id: "hbtp496vft",
+    name: "Konten Murid SMA Berjilbab Dientot Gurunya",
+    description: "Jika file tidak bisa terdownload, Silahkan hapus cache browser anda terlebih dahulu dan klik kembali tombol downloadnya!",
+    category: "xJilbab Video",
+    size: "65.3 MB",
+    downloads: "10:27",
+    os: ".mp4",
+    filename: "Kntn.Mrd.SM.Brjlbb.Dntt.Grny.mp4",
+    downloadUrl: "https://github.com/xjilbab-file/cdn/releases/download/v2026/Kntn.Mrd.SM.Brjlbb.Dntt.Grny.mp4",  // ganti dengan link asli
+    countdown: 20
+  },
 ];

@@ -76,4 +76,16 @@ const FILES = [
     downloadUrl: "https://github.com/xjilbab-file/cdn/releases/download/v2026/Fnts.Lr.Hjbr.Smk.Tbrt.Omk.Ht.mp4",  // ganti dengan link asli
     countdown: 20
   },
+  {
+    id: "sin5we3sdc",
+    name: "Aksi Panas Hijaber Kebaya Hitam",
+    description: "Jika file tidak bisa terdownload, Silahkan hapus cache browser anda terlebih dahulu dan klik kembali tombol downloadnya!",
+    category: "xJilbab Video",
+    size: "37.3 MB",
+    downloads: "09:00",
+    os: ".mp4",
+    filename: "Aks.Pns.Hjbr.Kby.Htm.mp4",
+    downloadUrl: "https://github.com/xjilbab-file/cdn/releases/download/v2026/Aks.Pns.Hjbr.Kby.Htm.mp4",  // ganti dengan link asli
+    countdown: 20
+  },
 ];

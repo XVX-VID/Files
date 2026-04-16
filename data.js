@@ -136,4 +136,28 @@ const FILES = [
     downloadUrl: "https://github.com/indoxvx-file/cdn/releases/download/v2026/Cwk.Ckp.Pntl.Dn.Ppkny.Pnk.Clmk.mp4",  // ganti dengan link asli
     countdown: 20
   },
+  {
+    id: "gut2tery58",
+    name: "Abg Hyper Suka Banget Dianal Pacarnya",
+    description: "Jika file tidak bisa terdownload, Silahkan hapus cache browser anda terlebih dahulu dan klik kembali tombol downloadnya!",
+    category: "IndoXvX Video",
+    size: "69.7 MB",
+    downloads: "27:41",
+    os: ".mp4",
+    filename: "Abg.Hypr.Sk.Bngt.Dnl.Pcrny.mp4",
+    downloadUrl: "https://github.com/indoxvx-file/cdn/releases/download/v2026/Abg.Hypr.Sk.Bngt.Dnl.Pcrny.mp4",  // ganti dengan link asli
+    countdown: 20
+  },
+  {
+    id: "z6toqzyt5v",
+    name: "Abg Manis Berkacamata Memeknya Bikin Kontol Cepat Crot",
+    description: "Jika file tidak bisa terdownload, Silahkan hapus cache browser anda terlebih dahulu dan klik kembali tombol downloadnya!",
+    category: "IndoXvX Video",
+    size: "11.4 MB",
+    downloads: "02:00",
+    os: ".mp4",
+    filename: "Abg.Mns.Brkcmt.Mmkny.Bkn.Kntl.Cpt.Crt.mp4",
+    downloadUrl: "https://github.com/indoxvx-file/cdn/releases/download/v2026/Abg.Mns.Brkcmt.Mmkny.Bkn.Kntl.Cpt.Crt.mp4",  // ganti dengan link asli
+    countdown: 20
+  },
 ];

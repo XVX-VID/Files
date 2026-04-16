@@ -124,4 +124,16 @@ const FILES = [
     downloadUrl: "https://github.com/indoxvx-file/cdn/releases/download/v2026/Nkmtny.Ngw.Adk.Ipr.Bkn.Lp.Dr.mp4",  // ganti dengan link asli
     countdown: 20
   },
+  {
+    id: "cimgdh7jc8",
+    name: "Cewek Cakep Pentil Dan Pepeknya Pink Colmek",
+    description: "Jika file tidak bisa terdownload, Silahkan hapus cache browser anda terlebih dahulu dan klik kembali tombol downloadnya!",
+    category: "IndoXvX Video",
+    size: "22.8 MB",
+    downloads: "05:22",
+    os: ".mp4",
+    filename: "Cwk.Ckp.Pntl.Dn.Ppkny.Pnk.Clmk.mp4",
+    downloadUrl: "https://github.com/indoxvx-file/cdn/releases/download/v2026/Cwk.Ckp.Pntl.Dn.Ppkny.Pnk.Clmk.mp4",  // ganti dengan link asli
+    countdown: 20
+  },
 ];

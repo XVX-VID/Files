@@ -4,29 +4,485 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="juicyads-site-verification" content="7efe0e64a368281ff5d93f60d61a7fbc">
-  <meta name="kadam-verification" content="kadam0f2db67e2cb68591856b403d6166e9e2" />
-  <title>404 - Halaman Tidak Ditemukan</title>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <meta name="description" content="Pusat download file terpercaya. Download software, tools, dan dokumen dengan cepat dan aman." />
+  <title>IndoXVX — Download Video</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:wght@400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: 'DM Mono', monospace;
-      background: #0f0f10;
-      color: #f0eff0;
+
+    :root {
+      --bg:      #080809;
+      --surface: #111113;
+      --surface2:#17171a;
+      --border:  rgba(255,255,255,0.06);
+      --border2: rgba(255,255,255,0.12);
+      --text:    #eeedf0;
+      --muted:   #666570;
+      --accent:  #4f8ef7;
+      --accent2: #7c6af7;
+      --green:   #3ecf78;
+      --font:    'DM Sans', -apple-system, sans-serif;
+      --display: 'Syne', sans-serif;
+      --mono:    'DM Mono', monospace;
+    }
+
+    html, body {
       min-height: 100vh;
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font);
+      overflow-x: hidden;
+    }
+
+    /* Grid background */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(79,142,247,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(79,142,247,0.03) 1px, transparent 1px);
+      background-size: 60px 60px;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* Glow blob */
+    body::after {
+      content: '';
+      position: fixed;
+      top: -200px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 800px;
+      height: 500px;
+      background: radial-gradient(ellipse, rgba(79,142,247,0.08) 0%, transparent 70%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .page { position: relative; z-index: 1; }
+
+    /* NAV */
+    nav {
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: space-between;
+      padding: 1.5rem 2rem;
+      border-bottom: 1px solid var(--border);
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .nav-logo {
+      font-family: var(--display);
+      font-size: 18px;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      color: var(--text);
+      text-decoration: none;
+    }
+    .nav-logo span { color: var(--accent); }
+    .nav-badge {
+      font-family: var(--mono);
+      font-size: 11px;
+      color: var(--accent);
+      background: rgba(79,142,247,0.1);
+      border: 1px solid rgba(79,142,247,0.2);
+      border-radius: 20px;
+      padding: 4px 12px;
+      letter-spacing: 0.06em;
+    }
+
+    /* HERO */
+    .hero {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 6rem 2rem 4rem;
       text-align: center;
     }
-    .code { font-size: 80px; font-weight: 400; color: #2a2a2c; line-height: 1; }
-    .msg { font-size: 13px; color: #555; margin-top: 16px; letter-spacing: 0.05em; }
+    .hero-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-family: var(--mono);
+      font-size: 11px;
+      color: var(--green);
+      background: rgba(62,207,120,0.08);
+      border: 1px solid rgba(62,207,120,0.2);
+      border-radius: 20px;
+      padding: 5px 14px;
+      margin-bottom: 1.5rem;
+      letter-spacing: 0.06em;
+    }
+    .hero-tag::before {
+      content: '';
+      width: 6px; height: 6px;
+      background: var(--green);
+      border-radius: 50%;
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.3; }
+    }
+    .hero h1 {
+      font-family: var(--display);
+      font-size: clamp(36px, 7vw, 72px);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.05;
+      margin-bottom: 1.25rem;
+    }
+    .hero h1 .accent { color: var(--accent); }
+    .hero p {
+      font-size: clamp(15px, 2vw, 17px);
+      color: var(--muted);
+      line-height: 1.7;
+      max-width: 520px;
+      margin: 0 auto 2.5rem;
+    }
+
+    /* STATS */
+    .stats-row {
+      display: flex;
+      justify-content: center;
+      gap: 2px;
+      margin-bottom: 4rem;
+      flex-wrap: wrap;
+    }
+    .stat-item {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      padding: 16px 28px;
+      text-align: center;
+    }
+    .stat-item:first-child { border-radius: 10px 0 0 10px; }
+    .stat-item:last-child  { border-radius: 0 10px 10px 0; }
+    .stat-num {
+      font-family: var(--display);
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--text);
+      letter-spacing: -0.02em;
+    }
+    .stat-lbl {
+      font-size: 12px;
+      color: var(--muted);
+      margin-top: 2px;
+      font-family: var(--mono);
+    }
+
+    /* FEATURES */
+    .features {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 2rem 5rem;
+    }
+    .section-label {
+      font-family: var(--mono);
+      font-size: 11px;
+      color: var(--muted);
+      letter-spacing: 0.1em;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 12px;
+    }
+    .feature-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1.5rem;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+    .feature-card:hover {
+      border-color: var(--border2);
+      transform: translateY(-2px);
+    }
+    .feature-icon {
+      width: 40px; height: 40px;
+      border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 14px;
+    }
+    .feature-icon svg { width: 20px; height: 20px; }
+    .feature-icon.blue  { background: rgba(79,142,247,0.1); color: var(--accent); }
+    .feature-icon.green { background: rgba(62,207,120,0.1); color: var(--green); }
+    .feature-icon.purple{ background: rgba(124,106,247,0.1); color: var(--accent2); }
+    .feature-card h3 {
+      font-family: var(--display);
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 6px;
+      letter-spacing: -0.01em;
+    }
+    .feature-card p { font-size: 13px; color: var(--muted); line-height: 1.6; }
+
+    /* HOW IT WORKS */
+    .how {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 2rem 5rem;
+    }
+    .how-title {
+      font-family: var(--display);
+      font-size: clamp(22px, 4vw, 32px);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 12px;
+    }
+    .step-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1.5rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .step-card::before {
+      content: attr(data-num);
+      position: absolute;
+      top: -10px;
+      right: 16px;
+      font-family: var(--display);
+      font-size: 80px;
+      font-weight: 800;
+      color: rgba(255,255,255,0.03);
+      line-height: 1;
+      pointer-events: none;
+    }
+    .step-num-badge {
+      width: 28px; height: 28px;
+      background: rgba(79,142,247,0.12);
+      color: var(--accent);
+      border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+      font-family: var(--mono);
+      font-size: 13px;
+      font-weight: 500;
+      margin-bottom: 12px;
+    }
+    .step-card h4 {
+      font-family: var(--display);
+      font-size: 15px;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+    .step-card p { font-size: 13px; color: var(--muted); line-height: 1.6; }
+
+    /* CTA */
+    .cta {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 2rem 6rem;
+    }
+    .cta-box {
+      background: var(--surface);
+      border: 1px solid var(--border2);
+      border-radius: 20px;
+      padding: 3rem 2rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .cta-box::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 50%;
+      transform: translateX(-50%);
+      width: 300px; height: 1px;
+      background: linear-gradient(90deg, transparent, var(--accent), transparent);
+    }
+    .cta-box h2 {
+      font-family: var(--display);
+      font-size: clamp(20px, 4vw, 28px);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 8px;
+    }
+    .cta-box p { font-size: 14px; color: var(--muted); margin-bottom: 1.5rem; }
+    .cta-note {
+      font-family: var(--mono);
+      font-size: 12px;
+      color: var(--muted);
+      margin-top: 12px;
+    }
+
+    /* FOOTER */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 2rem;
+      text-align: center;
+      font-family: var(--mono);
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    /* ANIMATIONS */
+    .fade-up {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeUp 0.6s ease forwards;
+    }
+    @keyframes fadeUp {
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .delay-1 { animation-delay: 0.1s; }
+    .delay-2 { animation-delay: 0.2s; }
+    .delay-3 { animation-delay: 0.3s; }
+    .delay-4 { animation-delay: 0.4s; }
+
+    @media (max-width: 600px) {
+      nav { padding: 1.25rem; }
+      .hero { padding: 4rem 1.25rem 3rem; }
+      .features, .how, .cta { padding-left: 1.25rem; padding-right: 1.25rem; }
+      .stat-item { padding: 12px 20px; }
+      .stat-item:first-child { border-radius: 10px 10px 0 0; }
+      .stat-item:last-child  { border-radius: 0 0 10px 10px; }
+      .stats-row { flex-direction: column; align-items: center; gap: 2px; }
+      .stat-item { width: 200px; }
+    }
   </style>
 </head>
 <body>
-  <div>
-    <div class="code">404</div>
-    <div class="msg">PAGE NOT FOUND</div>
-  </div>
+<div class="page">
+
+  <nav>
+    <a class="nav-logo" href="/"><span>Indo</span>XvX</a>
+    <span class="nav-badge">DOWNLOAD CENTER</span>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-tag fade-up">AKTIF & TERPERCAYA</div>
+    <h1 class="fade-up delay-1">Pusat Download<br><span class="accent">Cepat & Aman</span></h1>
+    <p class="fade-up delay-2">Temukan dan download koleksi file video hot yang kamu suka. Semua file telah diverifikasi dan aman siap di simpan.</p>
+
+    <div class="stats-row fade-up delay-3">
+      <div class="stat-item">
+        <div class="stat-num">100%</div>
+        <div class="stat-lbl">File Terverifikasi</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">Gratis</div>
+        <div class="stat-lbl">Tanpa Biaya</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">Cepat</div>
+        <div class="stat-lbl">Direct Download</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">Aman</div>
+        <div class="stat-lbl">Scan Virus</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="section-label">KEUNGGULAN</div>
+    <div class="features-grid">
+      <div class="feature-card fade-up">
+        <div class="feature-icon blue">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"/>
+          </svg>
+        </div>
+        <h3>Direct Download</h3>
+        <p>Tidak ada redirect berlebihan. Klik tombol download, file langsung terunduh ke perangkat kamu.</p>
+      </div>
+      <div class="feature-card fade-up delay-1">
+        <div class="feature-icon green">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/>
+          </svg>
+        </div>
+        <h3>File Aman</h3>
+        <p>Setiap file yang tersedia telah melalui proses verifikasi dan pemeriksaan keamanan sebelum dipublikasikan.</p>
+      </div>
+      <div class="feature-card fade-up delay-2">
+        <div class="feature-icon purple">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"/>
+          </svg>
+        </div>
+        <h3>Kecepatan Tinggi</h3>
+        <p>Server download kami menggunakan CDN berkecepatan tinggi sehingga proses unduhan berlangsung cepat.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="how">
+    <h2 class="how-title">Cara Download</h2>
+    <div class="steps">
+      <div class="step-card fade-up" data-num="1">
+        <div class="step-num-badge">01</div>
+        <h4>Buka Link Download</h4>
+        <p>Klik link download yang diberikan dari sumber terpercaya untuk membuka halaman unduhan.</p>
+      </div>
+      <div class="step-card fade-up delay-1" data-num="2">
+        <div class="step-num-badge">02</div>
+        <h4>Tunggu Sebentar</h4>
+        <p>Halaman akan memuat informasi file dan countdown singkat sebelum tombol download aktif.</p>
+      </div>
+      <div class="step-card fade-up delay-2" data-num="3">
+        <div class="step-num-badge">03</div>
+        <h4>Klik Download</h4>
+        <p>Tekan tombol Download Sekarang dan file akan langsung terunduh ke perangkat kamu.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="cta-box fade-up">
+      <h2>Punya Link Download?</h2>
+      <p>Masukkan link yang kamu terima untuk langsung mengakses halaman download file.</p>
+      <div style="display:flex; gap:8px; max-width:420px; margin:0 auto; flex-wrap:wrap; justify-content:center;">
+        <input type="text" id="link-input" placeholder="Tempel link download di sini..."
+          style="flex:1; min-width:200px; background:#17171a; border:1px solid rgba(255,255,255,0.12); border-radius:8px; color:#eeedf0; font-family:'DM Sans',sans-serif; font-size:14px; padding:11px 14px; outline:none;">
+        <button onclick="goToLink()"
+          style="background:#4f8ef7; color:white; border:none; border-radius:8px; font-family:'DM Sans',sans-serif; font-size:14px; font-weight:500; padding:11px 20px; cursor:pointer; white-space:nowrap;">
+          Buka
+        </button>
+      </div>
+      <p class="cta-note">Contoh: indoxvx.website/download.html?id=xxxxx</p>
+    </div>
+  </section>
+
+  <footer>
+    indoxvx.website &nbsp;·&nbsp; Download Center &nbsp;·&nbsp; Semua file aman & terverifikasi
+  </footer>
+
+</div>
+
+<script>
+  function goToLink() {
+    var val = document.getElementById('link-input').value.trim();
+    if (!val) return;
+    // Kalau user paste link penuh, langsung buka
+    if (val.startsWith('http')) {
+      window.location.href = val;
+    } else if (val.includes('id=')) {
+      // Kalau paste hanya bagian ?id=xxx
+      window.location.href = '/download.html?' + val.split('?').pop();
+    } else {
+      // Kalau paste hanya ID hash-nya
+      window.location.href = '/download.html?id=' + val;
+    }
+  }
+
+  document.getElementById('link-input').addEventListener('keydown', function(e) {
+    if (e.key === 'Enter') goToLink();
+  });
+</script>
 </body>
 </html>

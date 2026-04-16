@@ -213,7 +213,7 @@ const FILES = [
     name: "Driver Ojek Online Vs Bule Bali",
     description: "Jika file tidak bisa terdownload, Silahkan hapus cache browser anda terlebih dahulu dan klik kembali tombol downloadnya!",
     category: "IndoXvX Video",
-    size: "72.4",
+    size: "72.4 MB",
     downloads: "17:25",
     os: ".mp4",
     filename: "Drvr.Ojk.Onln.Vs.Ble.Bli.mp4",

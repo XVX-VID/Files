@@ -304,4 +304,16 @@ const FILES = [
     downloadUrl: "https://github.com/indoxvx-file/cdn/releases/download/v2026/Tnt.Kspn.Ngckn.Kntl.Smp.Crt.mp4",  // ganti dengan link asli
     countdown: 20
   },
+  {
+    id: "h4izxvpuea",
+    name: "Digoyang Pacar Semok Tembam Didalam Mobil",
+    description: "Jika file tidak bisa terdownload, Silahkan hapus cache browser anda terlebih dahulu dan klik kembali tombol downloadnya!",
+    category: "IndoXvX Video",
+    size: "7.52 MB",
+    downloads: "02:04",
+    os: ".mp4",
+    filename: "Dgyng.Pcr.Smk.Tmbm.Ddlm.Mbl.mp4",
+    downloadUrl: "https://github.com/indoxvx-file/cdn/releases/download/v2026/Dgyng.Pcr.Smk.Tmbm.Ddlm.Mbl.mp4",  // ganti dengan link asli
+    countdown: 20
+  },
 ];

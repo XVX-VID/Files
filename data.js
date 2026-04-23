@@ -316,4 +316,16 @@ const FILES = [
     downloadUrl: "https://github.com/indoxvx-file/cdn/releases/download/v2026/Dgyng.Pcr.Smk.Tmbm.Ddlm.Mbl.mp4",  // ganti dengan link asli
     countdown: 20
   },
+  {
+    id: "v6q6wkdfud",
+    name: "Tante Endut Diewe Dua Pemuda Liar",
+    description: "Jika file tidak bisa terdownload, Silahkan hapus cache browser anda terlebih dahulu dan klik kembali tombol downloadnya!",
+    category: "IndoXvX Video",
+    size: "22.6 MB",
+    downloads: "03:40",
+    os: ".mp4",
+    filename: "Tnt.Endt.Dw.D.Pmd.Lr.mp4",
+    downloadUrl: "https://github.com/indoxvx-file/cdn/releases/download/v2026/Tnt.Endt.Dw.D.Pmd.Lr.mp4",  // ganti dengan link asli
+    countdown: 20
+  },
 ];

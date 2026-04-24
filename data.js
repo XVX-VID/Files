@@ -340,4 +340,16 @@ const FILES = [
     downloadUrl: "https://github.com/indoxvx-file/cdn/releases/download/v2026/Jlmkn.Jnd.Hypr.Smp.Trkncng.Kncng.mp4",  // ganti dengan link asli
     countdown: 20
   },
+  {
+    id: "6fdo2ryx8h",
+    name: "Skandal Viral Bandar Batang Membara",
+    description: "Jika file tidak bisa terdownload, Silahkan hapus cache browser anda terlebih dahulu dan klik kembali tombol downloadnya!",
+    category: "IndoXvX Video",
+    size: "43 MB",
+    downloads: "12:18",
+    os: ".mp4",
+    filename: "Skndl.Vrl.Bndr.Btng.Mmbr.mp4",
+    downloadUrl: "https://github.com/indoxvx-file/cdn/releases/download/v2026/Skndl.Vrl.Bndr.Btng.Mmbr.mp4",  // ganti dengan link asli
+    countdown: 20
+  },
 ];

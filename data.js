@@ -376,4 +376,16 @@ const FILES = [
     downloadUrl: "https://github.com/xjilbab-file/cdn/releases/download/v2026/Dzzr.Hjbr.Vrl.Bndr.Brgtr.mp4",  // ganti dengan link asli
     countdown: 20
   },
+  {
+    id: "mznm31b5st",
+    name: "Dj Sesa Bali Vs Bule",
+    description: "Jika file tidak bisa terdownload, Silahkan hapus cache browser anda terlebih dahulu dan klik kembali tombol downloadnya!",
+    category: "IndoXvX Video",
+    size: "99.6 MB",
+    downloads: "18:30",
+    os: ".mp4",
+    filename: "Dj.Ss.Bl.Vs.Bl.mp4",
+    downloadUrl: "https://github.com/indoxvx-file/cdn/releases/download/v2026/Dj.Ss.Bl.Vs.Bl.mp4",  // ganti dengan link asli
+    countdown: 20
+  },
 ];

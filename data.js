@@ -405,11 +405,11 @@ const FILES = [
     name: "Tante Tobrut Hyper Prank Ojol",
     description: "Jika file tidak bisa terdownload, Silahkan hapus cache browser anda terlebih dahulu dan klik kembali tombol downloadnya!",
     category: "IndoXvX Video",
-    size: "ukuran file",
+    size: "51.6 MB",
     downloads: "09:46",
     os: ".mp4",
-    filename: "judul video.mp4",
-    downloadUrl: "link direct download",  // ganti dengan link asli
+    filename: "Tnt.Tbrt.Hypr.Prnk.Ojl.mp4",
+    downloadUrl: "https://github.com/indoxvx-file/cdn/releases/download/v2026/Tnt.Tbrt.Hypr.Prnk.Ojl.mp4",  // ganti dengan link asli
     countdown: 20
   },
 ];

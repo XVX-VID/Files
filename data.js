@@ -400,4 +400,16 @@ const FILES = [
     downloadUrl: "https://github.com/indoxvx-file/cdn/releases/download/v2026/Ngw.Cwk.Jlbb.Brsrgm.Pljr.SMP.mp4",  // ganti dengan link asli
     countdown: 20
   },
+  {
+    id: "w9t0ycv85v",
+    name: "Tante Tobrut Hyper Prank Ojol",
+    description: "Jika file tidak bisa terdownload, Silahkan hapus cache browser anda terlebih dahulu dan klik kembali tombol downloadnya!",
+    category: "IndoXvX Video",
+    size: "ukuran file",
+    downloads: "09:46",
+    os: ".mp4",
+    filename: "judul video.mp4",
+    downloadUrl: "link direct download",  // ganti dengan link asli
+    countdown: 20
+  },
 ];

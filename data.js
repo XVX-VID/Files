@@ -460,4 +460,16 @@ const FILES = [
     downloadUrl: "https://github.com/xjilbab-file/cdn/releases/download/v2026/Nkmt.Bngt.Dggstyl.Spp.Mns.Brjlbb.mp4",  // ganti dengan link asli
     countdown: 20
   },
+  {
+    id: "ygw4a8mxp8",
+    name: "Skandal Pengusaha Dan Binor Selingkuhannya",
+    description: "Jika file tidak bisa terdownload, Silahkan hapus cache browser anda terlebih dahulu dan klik kembali tombol downloadnya!",
+    category: "IndoXvX Video",
+    size: "105 MB",
+    downloads: "18:11",
+    os: ".mp4",
+    filename: "Skndl.Pngsh.Dn.Bnr.Slngkhnny.mp4",
+    downloadUrl: "https://github.com/indoxvx-file/cdn/releases/download/v2026/Skndl.Pngsh.Dn.Bnr.Slngkhnny.mp4",  // ganti dengan link asli
+    countdown: 20
+  },
 ];

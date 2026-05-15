@@ -472,4 +472,28 @@ const FILES = [
     downloadUrl: "https://github.com/indoxvx-file/cdn/releases/download/v2026/Skndl.Pngsh.Dn.Bnr.Slngkhnny.mp4",  // ganti dengan link asli
     countdown: 20
   },
+  {
+    id: "9tv3nkhkvf",
+    name: "Skandal Hijab Akper Dan Dosennya",
+    description: "Jika file tidak bisa terdownload, Silahkan hapus cache browser anda terlebih dahulu dan klik kembali tombol downloadnya!",
+    category: "xJilbab Video",
+    size: "99.4 MB",
+    downloads: "14:52",
+    os: ".mp4",
+    filename: "Skndl.Hjb.Akpr.Dn.Dsnny.mp4",
+    downloadUrl: "https://github.com/xjilbab-file/cdn/releases/download/v2026/Skndl.Hjb.Akpr.Dn.Dsnny.mp4",  // ganti dengan link asli
+    countdown: 20
+  },
+  {
+    id: "i8m0lbzih6",
+    name: "Raisa Hijaber Pulen Penuh Nafsu",
+    description: "Jika file tidak bisa terdownload, Silahkan hapus cache browser anda terlebih dahulu dan klik kembali tombol downloadnya!",
+    category: "xJilbab Video",
+    size: "34.9 MB",
+    downloads: "05:58",
+    os: ".mp4",
+    filename: "Rs.Hjbr.Pln.Pnh.Nfs.mp4",
+    downloadUrl: "https://github.com/xjilbab-file/cdn/releases/download/v2026/Rs.Hjbr.Pln.Pnh.Nfs.mp4",  // ganti dengan link asli
+    countdown: 20
+  },
 ];

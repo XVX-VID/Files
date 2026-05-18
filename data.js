@@ -496,4 +496,28 @@ const FILES = [
     downloadUrl: "https://github.com/xjilbab-file/cdn/releases/download/v2026/Rs.Hjbr.Pln.Pnh.Nfs.mp4",  // ganti dengan link asli
     countdown: 20
   },
+  {
+    id: "yo5mm8ijme",
+    name: "Video Panas Audrey Cantik Bertatto",
+    description: "Jika file tidak bisa terdownload, Silahkan hapus cache browser anda terlebih dahulu dan klik kembali tombol downloadnya!",
+    category: "IndoXvX Video",
+    size: "76.1 MB",
+    downloads: "16:42",
+    os: ".mp4",
+    filename: "Vd.Pns.Adry.Cntk.Brttt.mp4",
+    downloadUrl: "https://github.com/indoxvx-file/cdn/releases/download/v2026/Vd.Pns.Adry.Cntk.Brttt.mp4",  // ganti dengan link asli
+    countdown: 20
+  },
+  {
+    id: "xdflu121sr",
+    name: "Kelar Acara Resepsi Langsung Ngewe",
+    description: "Jika file tidak bisa terdownload, Silahkan hapus cache browser anda terlebih dahulu dan klik kembali tombol downloadnya!",
+    category: "IndoXvX Video",
+    size: "10.3 MB",
+    downloads: "01:44",
+    os: ".mp4",
+    filename: "Klr.Acr.Rsps.Lngsng.Ngw.mp4",
+    downloadUrl: "https://github.com/indoxvx-file/cdn/releases/download/v2026/Klr.Acr.Rsps.Lngsng.Ngw.mp4",  // ganti dengan link asli
+    countdown: 20
+  },
 ];

@@ -724,4 +724,28 @@ const FILES = [
     downloadUrl: "https://github.com/indoxvx-file/cdn/releases/download/v2026/Hjbr.Kby.Ung.Yng.Vrl.mp4",  // ganti dengan link asli
     countdown: 20
   },
+  {
+    id: "sjt8a8mraa",
+    name: "Viral Kebaya Ungu Manis Berjilbab",
+    description: "Jika file tidak bisa terdownload, Silahkan hapus cache browser anda terlebih dahulu dan klik kembali tombol downloadnya!",
+    category: "xJilbab Video",
+    size: "102 MB",
+    downloads: "20:00",
+    os: ".mp4",
+    filename: "Vrl.Kby.Ung.Mns.Brjlbb.mp4",
+    downloadUrl: "https://github.com/xjilbab-file/cdn/releases/download/v2026/Vrl.Kby.Ung.Mns.Brjlbb.mp4",  // ganti dengan link asli
+    countdown: 20
+  },
+  {
+    id: "566q35pr02",
+    name: "Sabila Hijab Manjain Kontol Kang Ojol",
+    description: "Jika file tidak bisa terdownload, Silahkan hapus cache browser anda terlebih dahulu dan klik kembali tombol downloadnya!",
+    category: "xJilbab Video",
+    size: "39.2 MB",
+    downloads: "08:32",
+    os: ".mp4",
+    filename: "Sbl.Hjb.Mnjn.Kntl.Kng.Ojl.mp4",
+    downloadUrl: "https://github.com/xjilbab-file/cdn/releases/download/v2026/Sbl.Hjb.Mnjn.Kntl.Kng.Ojl.mp4",  // ganti dengan link asli
+    countdown: 20
+  },
 ];

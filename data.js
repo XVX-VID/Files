@@ -772,4 +772,28 @@ const FILES = [
     downloadUrl: "https://github.com/xjilbab-file/cdn/releases/download/v2026/Ukht.Sumld.Ngntt.Mntp.Dsf.mp4",  // ganti dengan link asli
     countdown: 20
   },
+  {
+    id: "73988hdctf",
+    name: "Percakapan Karyawati Pasrah Dientot Manager",
+    description: "Jika file tidak bisa terdownload, Silahkan hapus cache browser anda terlebih dahulu dan klik kembali tombol downloadnya!",
+    category: "IndoXvX Video",
+    size: "77 MB",
+    downloads: "12:58",
+    os: ".mp4",
+    filename: "Prckpn.Krywt.Psrh.Dntot.Mngr.mp4",
+    downloadUrl: "https://github.com/indoxvx-file/cdn/releases/download/v2026/Prckpn.Krywt.Psrh.Dntot.Mngr.mp4",  // ganti dengan link asli
+    countdown: 20
+  },
+  {
+    id: "svbcyqritz",
+    name: "Video Panas Hijaber Malay Syumildee",
+    description: "Jika file tidak bisa terdownload, Silahkan hapus cache browser anda terlebih dahulu dan klik kembali tombol downloadnya!",
+    category: "IndoXvX Video",
+    size: "100 MB",
+    downloads: "21:34",
+    os: ".mp4",
+    filename: "Vd.Pns.Hjbr.Mly.Symld.mp4",
+    downloadUrl: "https://github.com/indoxvx-file/cdn/releases/download/v2026/Vd.Pns.Hjbr.Mly.Symld.mp4",  // ganti dengan link asli
+    countdown: 20
+  },
 ];

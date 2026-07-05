@@ -820,4 +820,16 @@ const FILES = [
     downloadUrl: "https://github.com/xjilbab-file/cdn/releases/download/v2026/Thrsm.Brsm.D.Tnt.Sng.Brjlbb.mp4",  // ganti dengan link asli
     countdown: 20
   },
+  {
+    id: "pixb9w25p2",
+    name: "Skandal PNS Semok Dan Camat Muda",
+    description: "Jika file tidak bisa terdownload, Silahkan hapus cache browser anda terlebih dahulu dan klik kembali tombol downloadnya!",
+    category: "IndoXvX Video",
+    size: "65.8 MB",
+    downloads: "07:41",
+    os: ".mp4",
+    filename: "Skndl.PNS.Smk.Dn.Cmt.Md.mp4",
+    downloadUrl: "https://github.com/indoxvx-file/cdn/releases/download/v2026/Skndl.PNS.Smk.Dn.Cmt.Md.mp4",  // ganti dengan link asli
+    countdown: 20
+  },
 ];

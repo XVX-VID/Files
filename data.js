@@ -856,4 +856,28 @@ const FILES = [
     downloadUrl: "https://github.com/xjilbab-file/cdn/releases/download/v2026/Ukht.Hjbr.Slm.Brh.Clmk.Gns.mp4",  // ganti dengan link asli
     countdown: 20
   },
+  {
+    id: "r3wohflwqt",
+    name: "Alzeera Lonte Alim Mengajar Sambil Bugil",
+    description: "Jika file tidak bisa terdownload, Silahkan hapus cache browser anda terlebih dahulu dan klik kembali tombol downloadnya!",
+    category: "xJilbab Video",
+    size: "113 MB",
+    downloads: "24:50",
+    os: ".mp4",
+    filename: "Alzr.Lnt.Alm.Mngjr.Smbl.Bgl.mp4",
+    downloadUrl: "https://github.com/xjilbab-file/cdn/releases/download/v2026/Alzr.Lnt.Alm.Mngjr.Smbl.Bgl.mp4",  // ganti dengan link asli
+    countdown: 20
+  },
+  {
+    id: "ygfg6tmjaq",
+    name: "Alzeera Hijab Eksib Dan Ngewe Didepan Rumah",
+    description: "Jika file tidak bisa terdownload, Silahkan hapus cache browser anda terlebih dahulu dan klik kembali tombol downloadnya!",
+    category: "xJilbab Video",
+    size: "68.3 MB",
+    downloads: "11:04",
+    os: ".mp4",
+    filename: "Alzr.Hjb.Eksb.Dn.Ngw.Ddpn.Rmh.mp4",
+    downloadUrl: "https://github.com/xjilbab-file/cdn/releases/download/v2026/Alzr.Hjb.Eksb.Dn.Ngw.Ddpn.Rmh.mp4",  // ganti dengan link asli
+    countdown: 20
+  },
 ];

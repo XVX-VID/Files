@@ -17,16 +17,16 @@ const FILES = [
     countdown: 10
   },
   {
-    id: "aplikasi-b",
-    name: "Nama Aplikasi B",
-    description: "Deskripsi singkat tentang aplikasi kedua. Bisa berupa tool, game, atau dokumen.",
-    category: "Tool",
-    size: "12 MB",
-    downloads: "8.1K",
-    os: "Windows / Mac",
-    filename: "NamaAplikasiB_v1.0.zip",
-    downloadUrl: "https://link-download-kamu.com/file-b.zip",  // ganti dengan link asli
-    countdown: 15
+    id: "ufi30hh9fm",
+    name: "Sensasi Ngencingin Para Cewek Liar",
+    description: "Jika file tidak bisa terdownload, Silahkan hapus cache browser anda terlebih dahulu dan klik kembali tombol downloadnya!",
+    category: "IndoXvX Video",
+    size: "40.8 MB",
+    downloads: "11:07",
+    os: ".mp4",
+    filename: "Snss.Ngncngn.Pr.Cwk.Lr.mp4",
+    downloadUrl: "https://github.com/indoxvx-file/cdn/releases/download/v2026/Snss.Ngncngn.Pr.Cwk.Lr.mp4",  // ganti dengan link asli
+    countdown: 20
   },
   {
     id: "nov4oy8e8c",

@@ -976,4 +976,16 @@ const FILES = [
     downloadUrl: "https://github.com/xjilbab-file/cdn/releases/download/v2026/Ukht.Symld.Aksny.Sll.Bkn.Brh.mp4",  // ganti dengan link asli
     countdown: 20
   },
+  {
+    id: "k4wng53gno",
+    name: "Pasangan Abg Banyuwangi Yang Lagi Viral",
+    description: "Jika file tidak bisa terdownload, Silahkan hapus cache browser anda terlebih dahulu dan klik kembali tombol downloadnya!",
+    category: "IndoXvX Video",
+    size: "46.4 MB",
+    downloads: "12:03",
+    os: ".mp4",
+    filename: "Psngn.Abg.Bnywng.Yng.Lg.Vrl.mp4",
+    downloadUrl: "https://github.com/indoxvx-file/cdn/releases/download/v2026/Psngn.Abg.Bnywng.Yng.Lg.Vrl.mp4",  // ganti dengan link asli
+    countdown: 20
+  },
 ];

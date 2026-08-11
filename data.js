@@ -1012,4 +1012,16 @@ const FILES = [
     downloadUrl: "https://github.com/xjilbab-file/cdn/releases/download/v2026/Alzr212.Lnt.Alm.Pms.Syhwt.Llk.mp4",  // ganti dengan link asli
     countdown: 20
   },
+  {
+    id: "21pqccm77k",
+    name: "Jejak Digital Video Panas Lisa Mariana",
+    description: "Jika file tidak bisa terdownload, Silahkan hapus cache browser anda terlebih dahulu dan klik kembali tombol downloadnya!",
+    category: "IndoXvX Video",
+    size: "41.8 MB",
+    downloads: "11:42",
+    os: ".mp4",
+    filename: "Jjk.Dgtl.Vdo.Pns.Ls.Mrn.mp4",
+    downloadUrl: "https://github.com/indoxvx-file/cdn/releases/download/v2026/Jjk.Dgtl.Vdo.Pns.Ls.Mrn.mp4",  // ganti dengan link asli
+    countdown: 20
+  },
 ];

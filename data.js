@@ -1072,4 +1072,16 @@ const FILES = [
     downloadUrl: "https://github.com/xjilbab-file/cdn/releases/download/v2026/Ngw.Hjbr.Brkcmt.Yng.Brnfs.Tngg.mp4",  // ganti dengan link asli
     countdown: 20
   },
+  {
+    id: "sztzcalnso",
+    name: "Kasir Indomaret Coolmax Fyp Viral",
+    description: "Jika file tidak bisa terdownload, Silahkan hapus cache browser anda terlebih dahulu dan klik kembali tombol downloadnya!",
+    category: "IndoXvX Video",
+    size: "6.9 MB",
+    downloads: "02:03",
+    os: ".mp4",
+    filename: "Ksr.Indmrt.Clmx.Fyp.Vrl.mp4",
+    downloadUrl: "https://github.com/indoxvx-file/cdn/releases/download/v2026/Ksr.Indmrt.Clmx.Fyp.Vrl.mp4",  // ganti dengan link asli
+    countdown: 20
+  },
 ];

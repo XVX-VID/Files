@@ -1084,4 +1084,16 @@ const FILES = [
     downloadUrl: "https://github.com/indoxvx-file/cdn/releases/download/v2026/Ksr.Indmrt.Clmx.Fyp.Vrl.mp4",  // ganti dengan link asli
     countdown: 20
   },
+  {
+    id: "m52cfcoivm",
+    name: "Ukhti Bercadar Memang Punya Keseksian Tersendiri",
+    description: "Jika file tidak bisa terdownload, Silahkan hapus cache browser anda terlebih dahulu dan klik kembali tombol downloadnya!",
+    category: "xJilbab Video",
+    size: "12,3 MB",
+    downloads: "02:47",
+    os: ".mp4",
+    filename: "Ukht.Brcdr.Mmng.Pny.Ksksn.Trsndr.mp4",
+    downloadUrl: "https://github.com/xjilbab-file/cdn/releases/download/v2026/Ukht.Brcdr.Mmng.Pny.Ksksn.Trsndr.mp4",  // ganti dengan link asli
+    countdown: 20
+  },
 ];

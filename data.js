@@ -1156,4 +1156,16 @@ const FILES = [
     downloadUrl: "https://github.com/xjilbab-file/cdn/releases/download/v2026/Hjbr.Slm.Ckp.Clmk.Smp.Brlndr.mp4",  // ganti dengan link asli
     countdown: 20
   },
+  {
+    id: "ak47otc9dy",
+    name: "Ngentotin Lc Hyper Rambut Merah Dihotel",
+    description: "Jika file tidak bisa terdownload, Silahkan hapus cache browser anda terlebih dahulu dan klik kembali tombol downloadnya!",
+    category: "IndoXvX Video",
+    size: "86.5 MB",
+    downloads: "11:51",
+    os: ".mp4",
+    filename: "Ngnttn.Lc.Hpr.Rmbt.Mrh.Dhtl.mp4",
+    downloadUrl: "https://github.com/indoxvx-file/cdn/releases/download/v2026/Ngnttn.Lc.Hpr.Rmbt.Mrh.Dhtl.mp4",  // ganti dengan link asli
+    countdown: 20
+  },
 ];

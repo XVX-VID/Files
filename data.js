@@ -1188,7 +1188,7 @@ const FILES = [
     size: "93.8 MB",
     downloads: "05:19",
     os: ".mp4",
-    filename: "https://github.com/indoxvx-file/cdn/releases/download/v2026/Tnt.Thrsm.Ht.Brsm.Gdnny.mp4",
+    filename: "Tnt.Thrsm.Ht.Brsm.Gdnny.mp4",
     downloadUrl: "https://github.com/indoxvx-file/cdn/releases/download/v2026/Tnt.Thrsm.Ht.Brsm.Gdnny.mp4",  // ganti dengan link asli
     countdown: 20
   },

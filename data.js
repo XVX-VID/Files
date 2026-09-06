@@ -1252,4 +1252,16 @@ const FILES = [
     downloadUrl: "https://github.com/xjilbab-file/cdn/releases/download/v2026/Clmk.Mrngsng.Brsm.Gds.Brjlbb.Mnj.mp4",  // ganti dengan link asli
     countdown: 20
   },
+  {
+    id: "a7h0d4xuxz",
+    name: "Viral Skandal Kepsek Dan Guru Di Pekalongan",
+    description: "Jika file tidak bisa terdownload, Silahkan hapus cache browser anda terlebih dahulu dan klik kembali tombol downloadnya!",
+    category: "IndoXvX Video",
+    size: "39.1 MB",
+    downloads: "04:34",
+    os: ".mp4",
+    filename: "Vrl.Skndl.Kpsk.Dn.Gr.D.Pklngn.mp4",
+    downloadUrl: "https://github.com/indoxvx-file/cdn/releases/download/v2026/Vrl.Skndl.Kpsk.Dn.Gr.D.Pklngn.mp4",  // ganti dengan link asli
+    countdown: 20
+  },
 ];

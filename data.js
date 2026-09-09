@@ -1288,4 +1288,16 @@ const FILES = [
     downloadUrl: "https://github.com/xjilbab-file/cdn/releases/download/v2026/Gds.Bl.Brkrdng.Aks.Clmkny.Ww.Bngt.mp4",  // ganti dengan link asli
     countdown: 20
   },
+  {
+    id: "ktrswjsufw",
+    name: "Gangbang Tante-Tante Gaul Sampai Menjerit Keras",
+    description: "Jika file tidak bisa terdownload, Silahkan hapus cache browser anda terlebih dahulu dan klik kembali tombol downloadnya!",
+    category: "IndoXvX Video",
+    size: "31.1 MB",
+    downloads: "05:25",
+    os: ".mp4",
+    filename: "Gngbng.Tnt-Tnt.Gl.Smp.Mnjrt.Krs.mp4",
+    downloadUrl: "https://github.com/indoxvx-file/cdn/releases/download/v2026/Gngbng.Tnt-Tnt.Gl.Smp.Mnjrt.Krs.mp4",  // ganti dengan link asli
+    countdown: 20
+  },
 ];

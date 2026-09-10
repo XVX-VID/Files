@@ -1300,4 +1300,16 @@ const FILES = [
     downloadUrl: "https://github.com/indoxvx-file/cdn/releases/download/v2026/Gngbng.Tnt-Tnt.Gl.Smp.Mnjrt.Krs.mp4",  // ganti dengan link asli
     countdown: 20
   },
+  {
+    id: "s3d3kynt2a",
+    name: "Ukhti Bercadar Eksib Dan Omek Dikebun Warga",
+    description: "Jika file tidak bisa terdownload, Silahkan hapus cache browser anda terlebih dahulu dan klik kembali tombol downloadnya!",
+    category: "xJilbab Video",
+    size: "63.5 MB",
+    downloads: "05:33",
+    os: ".mp4",
+    filename: "Ukht.Brcdr.Eksb.Dn.Omk.Dkbn.Wrg.mp4",
+    downloadUrl: "https://github.com/xjilbab-file/cdn/releases/download/v2026/Ukht.Brcdr.Eksb.Dn.Omk.Dkbn.Wrg.mp4",  // ganti dengan link asli
+    countdown: 20
+  },
 ];

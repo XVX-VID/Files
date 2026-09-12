@@ -1384,4 +1384,16 @@ const FILES = [
     downloadUrl: "https://github.com/xjilbab-file/cdn/releases/download/v2026/Pnct.Kntl.Pjh.Lmr.Dwjh.Ayng.Jlbb.mp4",  // ganti dengan link asli
     countdown: 20
   },
+  {
+    id: "jm31dn520a",
+    name: "Syakirah Sicantik Toge Yang Sempat Viral",
+    description: "Jika file tidak bisa terdownload, Silahkan hapus cache browser anda terlebih dahulu dan klik kembali tombol downloadnya!",
+    category: "IndoXvX Video",
+    size: "59.3 MB",
+    downloads: "09:07",
+    os: ".mp4",
+    filename: "Sykrh.Scntk.Tg.Yng.Smpt.Vrl.mp4",
+    downloadUrl: "https://github.com/indoxvx-file/cdn/releases/download/v2026/Sykrh.Scntk.Tg.Yng.Smpt.Vrl.mp4",  // ganti dengan link asli
+    countdown: 20
+  },
 ];

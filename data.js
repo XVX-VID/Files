@@ -1372,4 +1372,16 @@ const FILES = [
     downloadUrl: "https://github.com/xjilbab-file/cdn/releases/download/v2026/Abg.Brjlbb.Ppkny.Mls.Blm.Ad.Jmbt.mp4",  // ganti dengan link asli
     countdown: 20
   },
+  {
+    id: "1vwxfkgxh0",
+    name: "Pancut Kental Pejuh Lumer Diwajah Ayang Jilbab",
+    description: "Jika file tidak bisa terdownload, Silahkan hapus cache browser anda terlebih dahulu dan klik kembali tombol downloadnya!",
+    category: "xJilbab Video",
+    size: "11.4 MB",
+    downloads: "02:06",
+    os: ".mp4",
+    filename: "Pnct.Kntl.Pjh.Lmr.Dwjh.Ayng.Jlbb.mp4",
+    downloadUrl: "https://github.com/xjilbab-file/cdn/releases/download/v2026/Pnct.Kntl.Pjh.Lmr.Dwjh.Ayng.Jlbb.mp4",  // ganti dengan link asli
+    countdown: 20
+  },
 ];

@@ -1396,4 +1396,16 @@ const FILES = [
     downloadUrl: "https://github.com/indoxvx-file/cdn/releases/download/v2026/Sykrh.Scntk.Tg.Yng.Smpt.Vrl.mp4",  // ganti dengan link asli
     countdown: 20
   },
+  {
+    id: "2rg8pcbry8",
+    name: "Para LC Plenger Bugil Dan Mesum Diroom",
+    description: "Jika file tidak bisa terdownload, Silahkan hapus cache browser anda terlebih dahulu dan klik kembali tombol downloadnya!",
+    category: "IndoXvX Video",
+    size: "94.4 MB",
+    downloads: "11:45",
+    os: ".mp4",
+    filename: "Pr.LC.Plngr.Bgl.Dn.Msm.Drm.mp4",
+    downloadUrl: "https://github.com/indoxvx-file/cdn/releases/download/v2026/Pr.LC.Plngr.Bgl.Dn.Msm.Drm.mp4",  // ganti dengan link asli
+    countdown: 20
+  },
 ];

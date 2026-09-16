@@ -1420,4 +1420,16 @@ const FILES = [
     downloadUrl: "https://github.com/xjilbab-file/cdn/releases/download/v2026/Ngw.Jnd.Hjbr.Yng.Dyn.Slngkh.mp4",  // ganti dengan link asli
     countdown: 20
   },
+  {
+    id: "c2qpp07y54",
+    name: "Viral Skandal Biksu Thailand",
+    description: "Jika file tidak bisa terdownload, Silahkan hapus cache browser anda terlebih dahulu dan klik kembali tombol downloadnya!",
+    category: "IndoXvX Video",
+    size: "23.3 MB",
+    downloads: "06:30",
+    os: ".mp4",
+    filename: "Vrl.Skndl.Bks.Thlnd.mp4",
+    downloadUrl: "https://github.com/indoxvx-file/cdn/releases/download/v2026/Vrl.Skndl.Bks.Thlnd.mp4",  // ganti dengan link asli
+    countdown: 20
+  },
 ];

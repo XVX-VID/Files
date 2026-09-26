@@ -1588,4 +1588,16 @@ const FILES = [
     downloadUrl: "https://github.com/xjilbab-file/cdn/releases/download/v2026/Tnt.Dl.BBW.Tbrt.Ht.Abs.mp4",  // ganti dengan link asli
     countdown: 20
   },
+  {
+    id: "ftxa577vp1",
+    name: "Tante Vs Berondong Muda Tampan",
+    description: "Jika file tidak bisa terdownload, Silahkan hapus cache browser anda terlebih dahulu dan klik kembali tombol downloadnya!",
+    category: "IndoXvX Video",
+    size: "77.1 MB",
+    downloads: "18:54",
+    os: ".mp4",
+    filename: "Tnt.Vs.Brndng.Md.Tmpn.mp4",
+    downloadUrl: "https://github.com/indoxvx-file/cdn/releases/download/v2026/Tnt.Vs.Brndng.Md.Tmpn.mp4",  // ganti dengan link asli
+    countdown: 20
+  },
 ];

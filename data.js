@@ -1624,4 +1624,16 @@ const FILES = [
     downloadUrl: "https://github.com/xjilbab-file/cdn/releases/download/v2026/Tnt.Brjlbb.Tmbm.Dn.Tbl.Bkn.Ngcng.mp4",  // ganti dengan link asli
     countdown: 20
   },
+  {
+    id: "ny28kx3wxk",
+    name: "Tiktoker Bilqis Banyuwangi A Day In Mylife Fyp Viral",
+    description: "Jika file tidak bisa terdownload, Silahkan hapus cache browser anda terlebih dahulu dan klik kembali tombol downloadnya!",
+    category: "IndoXvX Video",
+    size: "18.4 MB",
+    downloads: "02:00",
+    os: ".mp4",
+    filename: "Tktkr.Blqs.Bnywng.A.Dy.In.Mlf.Fyp.Vrl.mp4",
+    downloadUrl: "https://github.com/indoxvx-file/cdn/releases/download/v2026/Tktkr.Blqs.Bnywng.A.Dy.In.Mlf.Fyp.Vrl.mp4",  // ganti dengan link asli
+    countdown: 20
+  },
 ];

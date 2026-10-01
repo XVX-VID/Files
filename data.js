@@ -1636,4 +1636,28 @@ const FILES = [
     downloadUrl: "https://github.com/indoxvx-file/cdn/releases/download/v2026/Tktkr.Blqs.Bnywng.A.Dy.In.Mlf.Fyp.Vrl.mp4",  // ganti dengan link asli
     countdown: 20
   },
+  {
+    id: "j2j0cc73no",
+    name: "BTS Pemotretan Model Hot Lala Karamoy",
+    description: "Jika file tidak bisa terdownload, Silahkan hapus cache browser anda terlebih dahulu dan klik kembali tombol downloadnya!",
+    category: "IndoXvX Video",
+    size: "130 MB",
+    downloads: "16:53",
+    os: ".mp4",
+    filename: "BTS.Pmtrtn.Mdl.Ht.Ll.Krmy.mp4",
+    downloadUrl: "https://github.com/indoxvx-file/cdn/releases/download/v2026/BTS.Pmtrtn.Mdl.Ht.Ll.Krmy.mp4",  // ganti dengan link asli
+    countdown: 20
+  },
+  {
+    id: "5f9434ehjm",
+    name: "Puaskan Birahi Ngewe Cewek Chubby Bertatto",
+    description: "Jika file tidak bisa terdownload, Silahkan hapus cache browser anda terlebih dahulu dan klik kembali tombol downloadnya!",
+    category: "IndoXvX Video",
+    size: "69 MB",
+    downloads: "07:12",
+    os: ".mp4",
+    filename: "Pskn.Brh.Ngw.Cwk.Chbby.Brttt.mp4",
+    downloadUrl: "https://github.com/indoxvx-file/cdn/releases/download/v2026/Pskn.Brh.Ngw.Cwk.Chbby.Brttt.mp4",  // ganti dengan link asli
+    countdown: 20
+  },
 ];

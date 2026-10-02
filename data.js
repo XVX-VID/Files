@@ -1684,4 +1684,16 @@ const FILES = [
     downloadUrl: "https://github.com/xjilbab-file/cdn/releases/download/v2026/Brcnt.Sr.Crt.Ddlm.Mmk.Bnr.Hjb.mp4",  // ganti dengan link asli
     countdown: 20
   },
+  {
+    id: "vlx80fo5ms",
+    name: "Skandal Tukang Masak Tambang Nyepongin Peler Operator",
+    description: "Jika file tidak bisa terdownload, Silahkan hapus cache browser anda terlebih dahulu dan klik kembali tombol downloadnya!",
+    category: "IndoXvX Video",
+    size: "48.7 MB",
+    downloads: "06:56",
+    os: ".mp4",
+    filename: "Skndl.Tkng.Msk.Tmbng.Nypngn.Plr.Oprtr.mp4",
+    downloadUrl: "https://github.com/indoxvx-file/cdn/releases/download/v2026/Skndl.Tkng.Msk.Tmbng.Nypngn.Plr.Oprtr.mp4",  // ganti dengan link asli
+    countdown: 20
+  },
 ];

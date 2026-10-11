@@ -1804,4 +1804,16 @@ const FILES = [
     downloadUrl: "https://github.com/xjilbab-file/cdn/releases/download/v2026/Ngrjn.Tnt.Jlbb.Smpa.Mndsh.Knkn.mp4",  // ganti dengan link asli
     countdown: 20
   },
+  {
+    id: "zzbclk8kv2",
+    name: "Tiktoker Kentang Goreng Dila Yang Viral Fyp",
+    description: "Jika file tidak bisa terdownload, Silahkan hapus cache browser anda terlebih dahulu dan klik kembali tombol downloadnya!",
+    category: "IndoXvX Video",
+    size: "29.7 MB",
+    downloads: "05:19",
+    os: ".mp4",
+    filename: "Tktkr.Kntng.Grng.Dl.Yng.Vrl.Fyp.mp4",
+    downloadUrl: "https://github.com/indoxvx-file/cdn/releases/download/v2026/Tktkr.Kntng.Grng.Dl.Yng.Vrl.Fyp.mp4",  // ganti dengan link asli
+    countdown: 20
+  },
 ];

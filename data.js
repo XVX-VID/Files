@@ -1864,4 +1864,28 @@ const FILES = [
     downloadUrl: "https://github.com/indoxvx-file/cdn/releases/download/v2026/Srknd.PSHT.Clmx.Vrl.mp4",  // ganti dengan link asli
     countdown: 20
   },
+  {
+    id: "w47ke1x8wy",
+    name: "Delok En A Yah Pelajar SMA Mesum Viral",
+    description: "Jika file tidak bisa terdownload, Silahkan hapus cache browser anda terlebih dahulu dan klik kembali tombol downloadnya!",
+    category: "IndoXvX Video",
+    size: "23.8 MB",
+    downloads: "02:43",
+    os: ".mp4",
+    filename: "Dlk.En.A.Yh.Pljr.SM.Msm.Vrl.mp4",
+    downloadUrl: "https://github.com/indoxvx-file/cdn/releases/download/v2026/Dlk.En.A.Yh.Pljr.SM.Msm.Vrl.mp4",  // ganti dengan link asli
+    countdown: 20
+  },
+  {
+    id: "e2h7pwizya",
+    name: "A Day In My Life Versi Cewek Lesbi",
+    description: "Jika file tidak bisa terdownload, Silahkan hapus cache browser anda terlebih dahulu dan klik kembali tombol downloadnya!",
+    category: "IndoXvX Video",
+    size: "62 MB",
+    downloads: "11:28",
+    os: ".mp4",
+    filename: "A.Dy.In.My.Lf.Vrs.Cwk.Lsb.mp4",
+    downloadUrl: "https://github.com/indoxvx-file/cdn/releases/download/v2026/A.Dy.In.My.Lf.Vrs.Cwk.Lsb.mp4",  // ganti dengan link asli
+    countdown: 20
+  },
 ];

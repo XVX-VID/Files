@@ -1888,4 +1888,16 @@ const FILES = [
     downloadUrl: "https://github.com/indoxvx-file/cdn/releases/download/v2026/A.Dy.In.My.Lf.Vrs.Cwk.Lsb.mp4",  // ganti dengan link asli
     countdown: 20
   },
+  {
+    id: "cdwqr16rha",
+    name: "Skandal Sex Tape Fatma Model Cantik Liar",
+    description: "Jika file tidak bisa terdownload, Silahkan hapus cache browser anda terlebih dahulu dan klik kembali tombol downloadnya!",
+    category: "IndoXvX Video",
+    size: "97.3 MB",
+    downloads: "16:00",
+    os: ".mp4",
+    filename: "Skndl.Sx.Tp.Ftm.Mdl.Cntk.Lr.mp4",
+    downloadUrl: "https://github.com/indoxvx-file/cdn/releases/download/v2026/Skndl.Sx.Tp.Ftm.Mdl.Cntk.Lr.mp4",  // ganti dengan link asli
+    countdown: 20
+  },
 ];

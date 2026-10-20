@@ -1936,4 +1936,16 @@ const FILES = [
     downloadUrl: "https://github.com/indoxvx-file/cdn/releases/download/v2026/Mbk.Pr.Ngnjk.Vrl.Prt.2.Ny.mp4",  // ganti dengan link asli
     countdown: 20
   },
+  {
+    id: "wac4yoek7u",
+    name: "Mbak Pur Versi Full Tanpa Blur",
+    description: "Jika file tidak bisa terdownload, Silahkan hapus cache browser anda terlebih dahulu dan klik kembali tombol downloadnya!",
+    category: "IndoXvX Video",
+    size: "47.4 MB",
+    downloads: "06:14",
+    os: ".mp4",
+    filename: "Mbk.Pr.Vrs.Fll.Tnp.Blr.mp4",
+    downloadUrl: "https://github.com/indoxvx-file/cdn/releases/download/v2026/Mbk.Pr.Vrs.Fll.Tnp.Blr.mp4",  // ganti dengan link asli
+    countdown: 20
+  },
 ];

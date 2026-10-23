@@ -1972,4 +1972,16 @@ const FILES = [
     downloadUrl: "https://github.com/xjilbab-file/cdn/releases/download/v2026/Ukht.Cntk.Ppk.Mls.Clmkny.Ww.Bngt.mp4",  // ganti dengan link asli
     countdown: 20
   },
+  {
+    id: "hxp1b6tbsp",
+    name: "Viral Adik Kakak Main Dimobil",
+    description: "Jika file tidak bisa terdownload, Silahkan hapus cache browser anda terlebih dahulu dan klik kembali tombol downloadnya!",
+    category: "IndoXvX Video",
+    size: "157 MB",
+    downloads: "17:03",
+    os: ".mp4",
+    filename: "Vrl.Adk.Kkk.Mn.Dmbl.mp4",
+    downloadUrl: "https://github.com/indoxvx-file/cdn/releases/download/v2026/Vrl.Adk.Kkk.Mn.Dmbl.mp4",  // ganti dengan link asli
+    countdown: 20
+  },
 ];

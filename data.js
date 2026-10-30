@@ -2032,4 +2032,16 @@ const FILES = [
     downloadUrl: "https://github.com/indoxvx-file/cdn/releases/download/v2026/Ngw.Tnt.Bnr.Pnjg.Wrng.Kp.mp4",  // ganti dengan link asli
     countdown: 20
   },
+  {
+    id: "xynbu5o5hl",
+    name: "Abg Berhijab Main Dimobil Bareng Kakak",
+    description: "Jika file tidak bisa terdownload, Silahkan hapus cache browser anda terlebih dahulu dan klik kembali tombol downloadnya!",
+    category: "xJilbab Video",
+    size: "150 MB",
+    downloads: "16:27",
+    os: ".mp4",
+    filename: "Abg.Brhjb.Mn.Dmbl.Brng.Kkk.mp4",
+    downloadUrl: "https://github.com/xjilbab-file/cdn/releases/download/v2026/Abg.Brhjb.Mn.Dmbl.Brng.Kkk.mp4",  // ganti dengan link asli
+    countdown: 20
+  },
 ];

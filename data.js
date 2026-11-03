@@ -2044,4 +2044,16 @@ const FILES = [
     downloadUrl: "https://github.com/xjilbab-file/cdn/releases/download/v2026/Abg.Brhjb.Mn.Dmbl.Brng.Kkk.mp4",  // ganti dengan link asli
     countdown: 20
   },
+  {
+    id: "z49owoqvq4",
+    name: "Skandal Panas Karyawati HWI Viral",
+    description: "Jika file tidak bisa terdownload, Silahkan hapus cache browser anda terlebih dahulu dan klik kembali tombol downloadnya!",
+    category: "IndoXvX Video",
+    size: "37.8 MB",
+    downloads: "06:01",
+    os: ".mp4",
+    filename: "Skndl.Pns.Krywt.HWI.Vrl.mp4",
+    downloadUrl: "https://github.com/indoxvx-file/cdn/releases/download/v2026/Skndl.Pns.Krywt.HWI.Vrl.mp4",  // ganti dengan link asli
+    countdown: 20
+  },
 ];

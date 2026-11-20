@@ -2152,4 +2152,16 @@ const FILES = [
     downloadUrl: "https://github.com/xjilbab-file/cdn/releases/download/v2026/Gds.Mns.Brjlbb.Dgmpr.Kntl.Gd.Cwkny.mp4",  // ganti dengan link asli
     countdown: 20
   },
+  {
+    id: "iqnp4ct3jm",
+    name: "Zoyya Imut Berhijab Yang Bikin Ngaceng Pol",
+    description: "Jika file tidak bisa terdownload, Silahkan hapus cache browser anda terlebih dahulu dan klik kembali tombol downloadnya!",
+    category: "xJilbab Video",
+    size: "66.7 MB",
+    downloads: "09:38",
+    os: ".mp4",
+    filename: "Zyy.Imt.Brhjb.Yng.Bkn.Ngcng.Pl.mp4",
+    downloadUrl: "https://github.com/xjilbab-file/cdn/releases/download/v2026/Zyy.Imt.Brhjb.Yng.Bkn.Ngcng.Pl.mp4",  // ganti dengan link asli
+    countdown: 20
+  },
 ];

@@ -2176,4 +2176,40 @@ const FILES = [
     downloadUrl: "https://github.com/xjilbab-file/cdn/releases/download/v2026/Shml.Ckp.Brjlbb.Yng.Vrl.mp4",  // ganti dengan link asli
     countdown: 20
   },
+  {
+    id: "qtt0rk9lx0",
+    name: "A Day In My Life Ngews Bareng Stranger",
+    description: "Jika file tidak bisa terdownload, Silahkan hapus cache browser anda terlebih dahulu dan klik kembali tombol downloadnya!",
+    category: "IndoXvX Video",
+    size: "54 MB",
+    downloads: "08:09",
+    os: ".mp4",
+    filename: "A.Dy.In.My.Lf.Ngws.Brng.Strngr.mp4",
+    downloadUrl: "https://github.com/indoxvx-file/cdn/releases/download/v2026/A.Dy.In.My.Lf.Ngws.Brng.Strngr.mp4",  // ganti dengan link asli
+    countdown: 20
+  },
+  {
+    id: "kkjkle7jxb",
+    name: "Winda Chan Si Tobrut Pulen Pembangkit Birahi",
+    description: "Jika file tidak bisa terdownload, Silahkan hapus cache browser anda terlebih dahulu dan klik kembali tombol downloadnya!",
+    category: "IndoXvX Video",
+    size: "226 MB",
+    downloads: "47:52",
+    os: ".mp4",
+    filename: "Wnd.Chn.S.Tbrt.Pln.Pmbngkt.Brh.mp4",
+    downloadUrl: "https://github.com/indoxvx-file/cdn/releases/download/v2026/Wnd.Chn.S.Tbrt.Pln.Pmbngkt.Brh.mp4",  // ganti dengan link asli
+    countdown: 20
+  },
+  {
+    id: "mx1x57wnz7",
+    name: "Zoyya Cewek Cute Yang Hobinya Colmek",
+    description: "Jika file tidak bisa terdownload, Silahkan hapus cache browser anda terlebih dahulu dan klik kembali tombol downloadnya!",
+    category: "IndoXvX Video",
+    size: "163 MB",
+    downloads: "25:56",
+    os: ".mp4",
+    filename: "Zyy.Cwk.Ct.Yng.Hbny.Clmk.mp4",
+    downloadUrl: "https://github.com/indoxvx-file/cdn/releases/download/v2026/Zyy.Cwk.Ct.Yng.Hbny.Clmk.mp4",  // ganti dengan link asli
+    countdown: 20
+  },
 ];
